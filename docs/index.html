@@ -10,6 +10,7 @@
   --bg:#f6f5f1; --surface:#fcfcfb; --line:#e3e0d7;
   --ink:#141413; --ink-2:#55544f; --ink-3:#7b7a73;
   --cs:#eb6834; --other:#b3b1a8; --link:#2a78d6;
+  --ok-bg:#dcfce7; --ok:#15803d; --cnt-bg:#e0f2fe; --cnt:#0369a1; --est:#b45309; --mut-bg:#eceae3;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -17,6 +18,7 @@
     --bg:#121211; --surface:#1a1a19; --line:#33332f;
     --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#9a998f;
     --cs:#e8733f; --other:#5f5e58; --link:#3987e5;
+    --ok-bg:#12351f; --ok:#6ee7a0; --cnt-bg:#0c2c40; --cnt:#7cc8f5; --est:#f0a95b; --mut-bg:#2a2a27;
   }
 }
 :root[data-theme="dark"]{
@@ -24,6 +26,7 @@
   --bg:#121211; --surface:#1a1a19; --line:#33332f;
   --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#9a998f;
   --cs:#e8733f; --other:#5f5e58; --link:#3987e5;
+    --ok-bg:#12351f; --ok:#6ee7a0; --cnt-bg:#0c2c40; --cnt:#7cc8f5; --est:#f0a95b; --mut-bg:#2a2a27;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -46,7 +49,32 @@ svg text{fill:var(--ink-2);font-size:14px;font-family:inherit}
 svg text.v{fill:var(--ink);font-weight:700}
 svg text.hl{fill:var(--cs);font-weight:700}
 svg text.ax{fill:var(--ink-3);font-size:12px}
-#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--surface);font-size:13px;padding:8px 10px;border-radius:8px;max-width:280px;opacity:0;z-index:10;line-height:1.4}
+.sub{color:var(--ink-2);margin:0;font-size:15px}
+.key{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0;font-size:13px;color:var(--ink-2);align-items:center}
+.badge{display:inline-block;padding:2px 7px;border-radius:5px;font-size:11px;font-weight:700;white-space:nowrap}
+.b-quote{background:var(--ok-bg);color:var(--ok)}
+.b-count{background:var(--cnt-bg);color:var(--cnt)}
+.b-chart{color:var(--est);border:1px dashed var(--est);padding:1px 6px}
+.b-date,.b-calc{background:var(--mut-bg);color:var(--ink-2)}
+.proof{border-left:3px solid var(--cs);background:var(--bg);border-radius:0 8px 8px 0;padding:8px 12px;margin:14px 0 0;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.proof b{color:var(--ink);font-size:13px}
+.proof .badge{margin-left:6px;vertical-align:1px}
+.proof .pv a{color:var(--ink-2)}
+.proof .pq{font-style:italic;margin-top:4px}
+.proof .pq:empty{display:none}
+[data-ev]{cursor:pointer;outline:none}
+rect[data-ev]:hover,rect[data-ev]:focus-visible,rect.sel{stroke:var(--ink);stroke-width:2}
+p[data-ev]{border-bottom:1px dotted var(--ink-3);display:inline}
+#sources h2{font-size:24px;margin:0 0 4px}
+.tw{overflow-x:auto;margin-top:14px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+td:first-child{color:var(--ink);width:26%}
+td.n{font-weight:700;color:var(--ink);white-space:nowrap}
+td .qt{font-style:italic}
+tr.grp td{background:var(--bg);font-weight:700;color:var(--ink);font-size:12px;letter-spacing:.04em}
+tr.hit td{background:var(--ok-bg)}
 details{margin-top:36px;font-size:14px;color:var(--ink-2)}
 summary{cursor:pointer;font-weight:600;color:var(--ink)}
 ol{padding-left:24px} li{margin-bottom:5px}
@@ -56,20 +84,24 @@ a{color:var(--link)}
 <body>
 <main>
 <h1>Computer science and AI in schools: US vs Europe</h1>
+<p class="sub">Every chart shows its evidence underneath; tap any bar for the source's exact words. Every number links to the original document; quotes were matched word-for-word against saved copies on 13 Oct 2026. <a href="#sources">All sources ↓</a></p>
+<div class="key"><span class="badge b-quote">Exact quote</span><span class="badge b-count">Counted from source data</span><span class="badge b-chart">Read from chart</span><span class="badge b-date">Date confirmed</span><span class="badge b-calc">Our calculation</span></div>
 
 <section class="card">
   <p class="ask">How often does the CS curriculum change?</p>
   <div class="pair">
-    <div>
+    <div data-scope="rate">
       <p class="who">US</p>
-      <p class="ans"><em>3–5×</em> more often than other subjects</p>
+      <p class="ans"><em data-ev="rate" tabindex="0" style="border-bottom:2px dotted">3–5×</em> more often than other subjects</p>
       <div id="c1us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">National school standards, rewrites per decade <a href="#r1">[1]</a>–<a href="#r8">[8]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_share">
       <p class="who">EUROPE</p>
-      <p class="ans"><em>7 in 10</em> systems were rewriting it at once</p>
+      <p class="ans"><em data-ev="eu_share" tabindex="0" style="border-bottom:2px dotted">7 in 10</em> systems were rewriting it at once</p>
       <div id="c1eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">39 education systems, 2020/21 <a href="#r13">[13]</a></p>
     </div>
   </div>
@@ -78,16 +110,18 @@ a{color:var(--link)}
 <section class="card">
   <p class="ask">Is CS part of what schools must teach?</p>
   <div class="pair">
-    <div>
+    <div data-scope="std_2025">
       <p class="who">US</p>
       <p class="ans"><em>6 → 44</em> states set CS standards in 8 years</p>
       <div id="c2us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">States with K-12 CS standards <a href="#r9">[9]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_lower">
       <p class="who">EUROPE</p>
       <p class="ans">Taught in <em>9 in 10</em> systems by age 11–14</p>
       <div id="c2eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">Informatics as its own discipline, 39 systems, 2020/21 <a href="#r13">[13]</a></p>
     </div>
   </div>
@@ -96,16 +130,18 @@ a{color:var(--link)}
 <section class="card">
   <p class="ask">Is AI being taught in schools?</p>
   <div class="pair">
-    <div>
+    <div data-scope="us_all">
       <p class="who">US</p>
       <p class="ans">To some students. <em>Rarely to all.</em></p>
       <div id="c3us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">US high schools, 2024–25 <a href="#r10">[10]</a> <a href="#r11">[11]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_ai">
       <p class="who">EUROPE</p>
       <p class="ans">In <em>1 in 3</em> national curricula</p>
       <div id="c3eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">AI in the lower-secondary curriculum, 38 systems, 2024/25 <a href="#r14">[14]</a></p>
     </div>
   </div>
@@ -113,17 +149,23 @@ a{color:var(--link)}
 
 <section class="card">
   <p class="ask">Does teaching AI work?</p>
-  <div class="pair">
+  <div class="pair" data-scope="ev_0">
     <div>
       <p class="ans one"><em>Unknown.</em> Not one rigorous study, anywhere.</p>
-      <p class="src">Stanford review of AI in K-12 education, 2026 <a href="#r12">[12]</a>. Europe's largest test (Estonia, 9,000+ students) has not reported yet <a href="#r15">[15]</a></p>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
+      <p class="src">Stanford review of AI in K-12 education, 2026 <a href="#r12">[12]</a>. <span data-ev="estonia" tabindex="0" style="border-bottom:1px dotted">Europe's largest test (Estonia, 9,000+ students) has not reported yet</span> <a href="#r15">[15]</a></p>
     </div>
     <div id="c4"></div>
   </div>
 </section>
 
+<section class="card" id="sources">
+  <h2>Where the numbers come from</h2>
+  <p class="sub">One row per number on this page, with what the source actually says.</p>
+  <div class="tw"><table><thead><tr><th>Number</th><th>Value</th><th>What the source says</th><th>Check</th><th>Source</th></tr></thead><tbody id="evtab"></tbody></table></div>
+</section>
 <details>
-  <summary>Sources</summary>
+  <summary>All 15 documents</summary>
   <ol>
     <li id="r1">CSTA (2026). <a href="https://csteachers.org/wp-content/uploads/2026/07/2026-CSTA-PK%E2%80%9312-Computer-Science-Standards.pdf">2026 CSTA PK–12 CS Standards</a>: CS versions 2003, 2006, 2011, 2017, 2026.</li>
     <li id="r2">NCTM (2000). <a href="https://nctm.org/News-and-Calendar/Messages-from-the-President/Archive/Glenda-Lappan/We-Have-Our-Principles-and-Standards_-What-Now_">Principles and Standards for School Mathematics</a>; Ferrini-Mundy, <a href="https://www.ams.org/journals/notices/200008/comm-ferrini.pdf">Notices of the AMS (2000)</a>: maths 1989, 2000.</li>
@@ -143,19 +185,27 @@ a{color:var(--link)}
   </ol>
 </details>
 </main>
-<div id="tip" role="tooltip"></div>
 <script>
-const DATA = {"REF": {"cs2023_intro": 1, "cs2023_bok": 3, "csta2026": 4, "astrachan1997": 5, "slashdot2000": 6, "slashdot2008": 7, "edsurge2016": 8, "apcentral_csa": 9, "wiki_apcs": 10, "eurydice2022": 11, "eurydice2026": 12, "govuk_computing": 13, "car2025": 14, "wirth1971": 15, "stroustrup": 16, "java1995": 17, "pythondocs": 18}, "LAG": [{"kind": "tech_to_curriculum", "case": "Pascal → AP CS", "from_label": "Pascal defined", "from_year": 1970.0, "to_label": "first AP exam", "to_year": 1984.0, "lag_years": 14.0, "source_keys": "wirth1971;wiki_apcs", "confidence": "medium", "note": null}, {"kind": "tech_to_curriculum", "case": "C++ → AP CS", "from_label": "C++ commercial release", "from_year": 1985.0, "to_label": "taught in AP CS", "to_year": 1998.7, "lag_years": 13.7, "source_keys": "stroustrup;astrachan1997", "confidence": "high", "note": "1998-99 school year"}, {"kind": "tech_to_curriculum", "case": "Java → AP CS", "from_label": "Java public launch", "from_year": 1995.0, "to_label": "taught in AP CS", "to_year": 2003.7, "lag_years": 8.7, "source_keys": "java1995;slashdot2000", "confidence": "medium", "note": "2003-04 school year"}, {"kind": "tech_to_curriculum", "case": "Python → Cyprus lower secondary", "from_label": "Python created (early 1990s)", "from_year": 1991.0, "to_label": "replaces Pascal", "to_year": 2022.7, "lag_years": 31.7, "source_keys": "pythondocs;eurydice2022", "confidence": "medium", "note": "'early 1990s' per python.org; 0.9 released 1991"}, {"kind": "tech_to_curriculum", "case": "Python → AP CS A", "from_label": "Python created", "from_year": 1991.0, "to_label": "not adopted (still Java in 2026)", "to_year": 2026.0, "lag_years": null, "source_keys": "pythondocs;apcentral_csa", "confidence": "medium", "note": "open-ended"}, {"kind": "tech_to_curriculum", "case": "ChatGPT → CS2023 (university)", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "CS2023 covers generative AI tools", "to_year": 2024.0, "lag_years": 1.1, "source_keys": "cs2023_bok", "confidence": "high", "note": "final report posted late 2023 to Apr 2024"}, {"kind": "tech_to_curriculum", "case": "ChatGPT → CSTA 2026 (US K-12)", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "CSTA 2026 standards", "to_year": 2026.5, "lag_years": 3.6, "source_keys": "csta2026", "confidence": "high", "note": null}, {"kind": "tech_to_curriculum", "case": "ChatGPT → Czech AI curriculum", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "full rollout", "to_year": 2032.0, "lag_years": 9.1, "source_keys": "eurydice2026", "confidence": "high", "note": "rollout 2028-32"}, {"kind": "decision_to_classroom", "case": "AP CS → C++", "from_label": "decision", "from_year": 1994.0, "to_label": "first taught", "to_year": 1998.7, "lag_years": 4.7, "source_keys": "astrachan1997", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "AP CS → Java", "from_label": "approval", "from_year": 2000.9, "to_label": "first taught", "to_year": 2003.7, "lag_years": 2.8, "source_keys": "slashdot2000", "confidence": "medium", "note": null}, {"kind": "decision_to_classroom", "case": "England computing", "from_label": "published", "from_year": 2013.7, "to_label": "first taught", "to_year": 2014.7, "lag_years": 1.0, "source_keys": "govuk_computing;eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "England 2025 review", "from_label": "review report", "from_year": 2025.8, "to_label": "new curriculum", "to_year": 2028.7, "lag_years": 2.9, "source_keys": "car2025", "confidence": "medium", "note": null}, {"kind": "decision_to_classroom", "case": "Spain LOMLOE", "from_label": "law", "from_year": 2020.99, "to_label": "fully implemented", "to_year": 2024.0, "lag_years": 3.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Czechia informatics", "from_label": "framework adopted", "from_year": 2021.0, "to_label": "full lower-secondary", "to_year": 2024.0, "lag_years": 3.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Slovakia (incl. AI)", "from_label": "approved", "from_year": 2023.0, "to_label": "full roll-out", "to_year": 2026.7, "lag_years": 3.7, "source_keys": "eurydice2026", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Malta ICT C3", "from_label": "first grade", "from_year": 2018.7, "to_label": "last grade", "to_year": 2022.7, "lag_years": 4.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Ireland coding course", "from_label": "first schools", "from_year": 2014.0, "to_label": "all phases", "to_year": 2021.0, "lag_years": 7.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Lithuania informatics", "from_label": "pilot", "from_year": 2021.0, "to_label": "mandatory", "to_year": 2023.0, "lag_years": 2.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}], "STD": [{"year": 2017, "n": 6, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2018, "n": 22, "src": "Code.org State of CS 2018 p.28"}, {"year": 2019, "n": 34, "src": "Code.org State of CS 2019"}, {"year": 2020, "n": 37, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2021, "n": 39, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2022, "n": null, "src": "Code.org State of CS 2022"}, {"year": 2023, "n": 42, "src": "Code.org State of CS 2023 Appendix 1 table"}, {"year": 2024, "n": 43, "src": "Code.org State of CS 2024"}, {"year": 2025, "n": 44, "src": "CodeAI State of AI+CS 2025 state pages"}], "SUBJ": [{"level": "School (US national model standards)", "subject": "Computer science", "year": 2003, "document": "ACM Model Curriculum for K-12 CS"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2006, "document": "ACM Model Curriculum (revised)"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2011, "document": "CSTA K-12 CS Standards"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2017, "document": "CSTA K-12 CS Standards (revised)"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2026, "document": "CSTA PK-12 CS Standards"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 1989, "document": "NCTM Curriculum and Evaluation Standards"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 2000, "document": "NCTM Principles and Standards for School Mathematics"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 2010, "document": "Common Core State Standards (Maths)"}, {"level": "School (US national model standards)", "subject": "Science", "year": 1996, "document": "National Science Education Standards (NRC)"}, {"level": "School (US national model standards)", "subject": "Science", "year": 2013, "document": "Next Generation Science Standards"}, {"level": "School (US national model standards)", "subject": "English", "year": 1996, "document": "NCTE/IRA Standards for the English Language Arts"}, {"level": "School (US national model standards)", "subject": "English", "year": 2010, "document": "Common Core State Standards (ELA)"}, {"level": "School (US national model standards)", "subject": "Social studies", "year": 1994, "document": "NCSS Expectations of Excellence"}, {"level": "School (US national model standards)", "subject": "Social studies", "year": 2010, "document": "NCSS National Curriculum Standards for Social Studies"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1968, "document": "Curriculum 68"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1979, "document": "Curriculum 78"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1991, "document": "Computing Curricula 1991"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2001, "document": "CC2001"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2008, "document": "CS2008"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2013, "document": "CS2013"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2023, "document": "CS2023"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1965, "document": "CUPM General Curriculum in Mathematics for Colleges"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1981, "document": "CUPM Recommendations for a General Mathematical Sciences Program"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1991, "document": "CUPM The Undergraduate Major in the Mathematical Sciences"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 2004, "document": "CUPM Curriculum Guide 2004"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 2015, "document": "CUPM Curriculum Guide 2015"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2008, "document": "ACS Guidelines for Bachelor's Degree Programs"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2015, "document": "ACS Guidelines for Bachelor's Degree Programs"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2023, "document": "ACS Guidelines for Bachelor's Degree Programs"}], "EU": [{"c": "EN", "n": "England (UK)", "y": 2014, "t": "England (UK), 2014: Computing replaces ICT, taught from 2014/15", "planned": false}, {"c": "FR", "n": "France", "y": 2019, "t": "France, 2019: Lycée reform: informatics subjects from 2019", "planned": false}, {"c": "IE", "n": "Ireland", "y": 2021, "t": "Ireland, 2021: Junior-cycle coding course fully phased in by 2021", "planned": false}, {"c": "BG", "n": "Bulgaria", "y": 2021, "t": "Bulgaria, 2021: New subject from 2021/22", "planned": false}, {"c": "LU", "n": "Luxembourg", "y": 2022, "t": "Luxembourg, 2022: Digital sciences national from 2022/23", "planned": false}, {"c": "CY", "n": "Cyprus", "y": 2022, "t": "Cyprus, 2022: Python replaces Pascal, 2022/23", "planned": false}, {"c": "MT", "n": "Malta", "y": 2023, "t": "Malta, 2023: ICT C3 reaches final grade 2022/23", "planned": false}, {"c": "LV", "n": "Latvia", "y": 2023, "t": "Latvia, 2023: New computing syllabus complete 2022/23", "planned": false}, {"c": "LT", "n": "Lithuania", "y": 2023, "t": "Lithuania, 2023: New informatics curriculum mandatory 2023", "planned": false}, {"c": "CZ", "n": "Czechia", "y": 2024, "t": "Czechia, 2024: New informatics in all lower-secondary 2024", "planned": false}, {"c": "ES", "n": "Spain", "y": 2024, "t": "Spain, 2024: LOMLOE curriculum fully in place 2023/24", "planned": false}, {"c": "SK", "n": "Slovakia", "y": 2027, "t": "Slovakia, 2027: Planned: full roll-out 2026/27 (includes AI)", "planned": true}], "EUAI": {"total": 38, "yes": 12, "pipeline": 4, "none": 22}, "EUINF": {"total": 39, "primary": 23, "lower_secondary": 35, "reform_implementing": 17, "reform_developing": 11}};
+const DATA = {"REF": {"cs2023_intro": 1, "cs2023_bok": 3, "csta2026": 4, "astrachan1997": 5, "slashdot2000": 6, "slashdot2008": 7, "edsurge2016": 8, "apcentral_csa": 9, "wiki_apcs": 10, "eurydice2022": 11, "eurydice2026": 12, "govuk_computing": 13, "car2025": 14, "wirth1971": 15, "stroustrup": 16, "java1995": 17, "pythondocs": 18}, "LAG": [{"kind": "tech_to_curriculum", "case": "Pascal → AP CS", "from_label": "Pascal defined", "from_year": 1970.0, "to_label": "first AP exam", "to_year": 1984.0, "lag_years": 14.0, "source_keys": "wirth1971;wiki_apcs", "confidence": "medium", "note": null}, {"kind": "tech_to_curriculum", "case": "C++ → AP CS", "from_label": "C++ commercial release", "from_year": 1985.0, "to_label": "taught in AP CS", "to_year": 1998.7, "lag_years": 13.7, "source_keys": "stroustrup;astrachan1997", "confidence": "high", "note": "1998-99 school year"}, {"kind": "tech_to_curriculum", "case": "Java → AP CS", "from_label": "Java public launch", "from_year": 1995.0, "to_label": "taught in AP CS", "to_year": 2003.7, "lag_years": 8.7, "source_keys": "java1995;slashdot2000", "confidence": "medium", "note": "2003-04 school year"}, {"kind": "tech_to_curriculum", "case": "Python → Cyprus lower secondary", "from_label": "Python created (early 1990s)", "from_year": 1991.0, "to_label": "replaces Pascal", "to_year": 2022.7, "lag_years": 31.7, "source_keys": "pythondocs;eurydice2022", "confidence": "medium", "note": "'early 1990s' per python.org; 0.9 released 1991"}, {"kind": "tech_to_curriculum", "case": "Python → AP CS A", "from_label": "Python created", "from_year": 1991.0, "to_label": "not adopted (still Java in 2026)", "to_year": 2026.0, "lag_years": null, "source_keys": "pythondocs;apcentral_csa", "confidence": "medium", "note": "open-ended"}, {"kind": "tech_to_curriculum", "case": "ChatGPT → CS2023 (university)", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "CS2023 covers generative AI tools", "to_year": 2024.0, "lag_years": 1.1, "source_keys": "cs2023_bok", "confidence": "high", "note": "final report posted late 2023 to Apr 2024"}, {"kind": "tech_to_curriculum", "case": "ChatGPT → CSTA 2026 (US K-12)", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "CSTA 2026 standards", "to_year": 2026.5, "lag_years": 3.6, "source_keys": "csta2026", "confidence": "high", "note": null}, {"kind": "tech_to_curriculum", "case": "ChatGPT → Czech AI curriculum", "from_label": "ChatGPT release", "from_year": 2022.9, "to_label": "full rollout", "to_year": 2032.0, "lag_years": 9.1, "source_keys": "eurydice2026", "confidence": "high", "note": "rollout 2028-32"}, {"kind": "decision_to_classroom", "case": "AP CS → C++", "from_label": "decision", "from_year": 1994.0, "to_label": "first taught", "to_year": 1998.7, "lag_years": 4.7, "source_keys": "astrachan1997", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "AP CS → Java", "from_label": "approval", "from_year": 2000.9, "to_label": "first taught", "to_year": 2003.7, "lag_years": 2.8, "source_keys": "slashdot2000", "confidence": "medium", "note": null}, {"kind": "decision_to_classroom", "case": "England computing", "from_label": "published", "from_year": 2013.7, "to_label": "first taught", "to_year": 2014.7, "lag_years": 1.0, "source_keys": "govuk_computing;eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "England 2025 review", "from_label": "review report", "from_year": 2025.8, "to_label": "new curriculum", "to_year": 2028.7, "lag_years": 2.9, "source_keys": "car2025", "confidence": "medium", "note": null}, {"kind": "decision_to_classroom", "case": "Spain LOMLOE", "from_label": "law", "from_year": 2020.99, "to_label": "fully implemented", "to_year": 2024.0, "lag_years": 3.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Czechia informatics", "from_label": "framework adopted", "from_year": 2021.0, "to_label": "full lower-secondary", "to_year": 2024.0, "lag_years": 3.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Slovakia (incl. AI)", "from_label": "approved", "from_year": 2023.0, "to_label": "full roll-out", "to_year": 2026.7, "lag_years": 3.7, "source_keys": "eurydice2026", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Malta ICT C3", "from_label": "first grade", "from_year": 2018.7, "to_label": "last grade", "to_year": 2022.7, "lag_years": 4.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Ireland coding course", "from_label": "first schools", "from_year": 2014.0, "to_label": "all phases", "to_year": 2021.0, "lag_years": 7.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}, {"kind": "decision_to_classroom", "case": "Lithuania informatics", "from_label": "pilot", "from_year": 2021.0, "to_label": "mandatory", "to_year": 2023.0, "lag_years": 2.0, "source_keys": "eurydice2022", "confidence": "high", "note": null}], "STD": [{"year": 2017, "n": 6, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2018, "n": 22, "src": "Code.org State of CS 2018 p.28"}, {"year": 2019, "n": 34, "src": "Code.org State of CS 2019"}, {"year": 2020, "n": 37, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2021, "n": 39, "src": "Code.org State of CS 2021 p.29 chart"}, {"year": 2022, "n": null, "src": "Code.org State of CS 2022"}, {"year": 2023, "n": 42, "src": "Code.org State of CS 2023 Appendix 1 table"}, {"year": 2024, "n": 43, "src": "Code.org State of CS 2024"}, {"year": 2025, "n": 44, "src": "CodeAI State of AI+CS 2025 state pages"}], "SUBJ": [{"level": "School (US national model standards)", "subject": "Computer science", "year": 2003, "document": "ACM Model Curriculum for K-12 CS"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2006, "document": "ACM Model Curriculum (revised)"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2011, "document": "CSTA K-12 CS Standards"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2017, "document": "CSTA K-12 CS Standards (revised)"}, {"level": "School (US national model standards)", "subject": "Computer science", "year": 2026, "document": "CSTA PK-12 CS Standards"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 1989, "document": "NCTM Curriculum and Evaluation Standards"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 2000, "document": "NCTM Principles and Standards for School Mathematics"}, {"level": "School (US national model standards)", "subject": "Maths", "year": 2010, "document": "Common Core State Standards (Maths)"}, {"level": "School (US national model standards)", "subject": "Science", "year": 1996, "document": "National Science Education Standards (NRC)"}, {"level": "School (US national model standards)", "subject": "Science", "year": 2013, "document": "Next Generation Science Standards"}, {"level": "School (US national model standards)", "subject": "English", "year": 1996, "document": "NCTE/IRA Standards for the English Language Arts"}, {"level": "School (US national model standards)", "subject": "English", "year": 2010, "document": "Common Core State Standards (ELA)"}, {"level": "School (US national model standards)", "subject": "Social studies", "year": 1994, "document": "NCSS Expectations of Excellence"}, {"level": "School (US national model standards)", "subject": "Social studies", "year": 2010, "document": "NCSS National Curriculum Standards for Social Studies"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1968, "document": "Curriculum 68"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1979, "document": "Curriculum 78"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 1991, "document": "Computing Curricula 1991"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2001, "document": "CC2001"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2008, "document": "CS2008"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2013, "document": "CS2013"}, {"level": "University (US professional-society guidelines)", "subject": "Computer science", "year": 2023, "document": "CS2023"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1965, "document": "CUPM General Curriculum in Mathematics for Colleges"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1981, "document": "CUPM Recommendations for a General Mathematical Sciences Program"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 1991, "document": "CUPM The Undergraduate Major in the Mathematical Sciences"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 2004, "document": "CUPM Curriculum Guide 2004"}, {"level": "University (US professional-society guidelines)", "subject": "Maths", "year": 2015, "document": "CUPM Curriculum Guide 2015"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2008, "document": "ACS Guidelines for Bachelor's Degree Programs"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2015, "document": "ACS Guidelines for Bachelor's Degree Programs"}, {"level": "University (US professional-society guidelines)", "subject": "Chemistry", "year": 2023, "document": "ACS Guidelines for Bachelor's Degree Programs"}], "EU": [{"c": "EN", "n": "England (UK)", "y": 2014, "t": "England (UK), 2014: Computing replaces ICT, taught from 2014/15", "planned": false}, {"c": "FR", "n": "France", "y": 2019, "t": "France, 2019: Lycée reform: informatics subjects from 2019", "planned": false}, {"c": "IE", "n": "Ireland", "y": 2021, "t": "Ireland, 2021: Junior-cycle coding course fully phased in by 2021", "planned": false}, {"c": "BG", "n": "Bulgaria", "y": 2021, "t": "Bulgaria, 2021: New subject from 2021/22", "planned": false}, {"c": "LU", "n": "Luxembourg", "y": 2022, "t": "Luxembourg, 2022: Digital sciences national from 2022/23", "planned": false}, {"c": "CY", "n": "Cyprus", "y": 2022, "t": "Cyprus, 2022: Python replaces Pascal, 2022/23", "planned": false}, {"c": "MT", "n": "Malta", "y": 2023, "t": "Malta, 2023: ICT C3 reaches final grade 2022/23", "planned": false}, {"c": "LV", "n": "Latvia", "y": 2023, "t": "Latvia, 2023: New computing syllabus complete 2022/23", "planned": false}, {"c": "LT", "n": "Lithuania", "y": 2023, "t": "Lithuania, 2023: New informatics curriculum mandatory 2023", "planned": false}, {"c": "CZ", "n": "Czechia", "y": 2024, "t": "Czechia, 2024: New informatics in all lower-secondary 2024", "planned": false}, {"c": "ES", "n": "Spain", "y": 2024, "t": "Spain, 2024: LOMLOE curriculum fully in place 2023/24", "planned": false}, {"c": "SK", "n": "Slovakia", "y": 2027, "t": "Slovakia, 2027: Planned: full roll-out 2026/27 (includes AI)", "planned": true}], "EUAI": {"total": 38, "yes": 12, "pipeline": 4, "none": 22}, "EUINF": {"total": 39, "primary": 23, "lower_secondary": 35, "reform_implementing": 17, "reform_developing": 11}, "EVID": [{"id": "cs_versions", "card": 1, "claim": "US school CS standards: 5 versions since 2003", "value": "2003 · 2006 · 2011 · 2017 · 2026", "check": "quote", "quote": "\"in 2003 (Tucker, 2003) and revised in 2006 (Tucker et al., 2006), laying the groundwork for the first comprehensive CSTA K–12 Computer Science Standards released in 2011 … A revised set of Standards was published in 2017\"", "source": "CSTA (2026), PK–12 CS Standards", "url": "https://csteachers.org/wp-content/uploads/2026/07/2026-CSTA-PK%E2%80%9312-Computer-Science-Standards.pdf", "locator": "p.10"}, {"id": "maths_versions", "card": 1, "claim": "US school maths standards: 3 versions", "value": "1989 · 2000 · 2010", "check": "date", "quote": "NCTM Curriculum and Evaluation Standards (1989); Principles and Standards for School Mathematics (2000); Common Core (2010).", "source": "NCTM; AMS Notices (2000); Education Week (2010)", "url": "https://www.ams.org/journals/notices/200008/comm-ferrini.pdf", "locator": ""}, {"id": "science_versions", "card": 1, "claim": "US school science standards: 2 versions", "value": "1996 · 2013", "check": "date", "quote": "National Science Education Standards (NRC, 1996); Next Generation Science Standards (2013).", "source": "National Research Council; NGSS", "url": "https://doi.org/10.17226/4962", "locator": ""}, {"id": "english_versions", "card": 1, "claim": "US school English standards: 2 versions", "value": "1996 · 2010", "check": "date", "quote": "NCTE/IRA Standards for the English Language Arts (1996); Common Core ELA (2010).", "source": "Education Week (1996, 2010)", "url": "https://www.edweek.org/teaching-learning/standards-for-language-arts-are-unveiled/1996/03", "locator": ""}, {"id": "social_versions", "card": 1, "claim": "US school social studies standards: 2 versions", "value": "1994 · 2010", "check": "date", "quote": "NCSS Expectations of Excellence (1994); National Curriculum Standards for Social Studies (2010).", "source": "Education Week (1994); NCSS library record (2010)", "url": "https://www.edweek.org/education/social-studies-council-issues-standards-for-k-12-curriculum/1994/09", "locator": ""}, {"id": "rate", "card": 1, "claim": "US: CS standards rewritten 3–5× as often", "value": "1.7 vs 0.3–0.5 per decade", "check": "calc", "quote": "Rewrites per decade = (versions − 1) ÷ (2026 − first year) × 10. CS: 4 ÷ 23 × 10 = 1.7. Maths 0.5, science 0.3, English 0.3, social studies 0.3.", "source": "Standards dates: see table below", "url": "#sources", "locator": ""}, {"id": "eu_impl", "card": 1, "claim": "Europe: 17 systems rolling out an informatics reform", "value": "17 of 39", "check": "quote", "quote": "\"As shown in Figure 1.5, 17 education systems were in the process of implementing curricular reforms on informatics education.\"", "source": "Eurydice (2022), Informatics education at school in Europe", "url": "https://eurydice.indire.it/wp-content/uploads/2022/09/Informatics-education_Report.pdf", "locator": "p.36"}, {"id": "eu_dev", "card": 1, "claim": "Europe: 11 more drafting one", "value": "11 of 39", "check": "quote", "quote": "\"In 11 other education systems, the education authorities are planning the development of curricular reforms on informatics education.\"", "source": "Eurydice (2022), Informatics education at school in Europe", "url": "https://eurydice.indire.it/wp-content/uploads/2022/09/Informatics-education_Report.pdf", "locator": "p.39"}, {"id": "eu_share", "card": 1, "claim": "Europe: systems reforming informatics", "value": "28 of 39", "check": "quote", "quote": "\"More than two thirds of the education systems are implementing or developing reforms that envisage the introduction of an informatics subject or the provision or updating of related learning outcomes\"", "source": "Eurydice (2022), Informatics education at school in Europe", "url": "https://eurydice.indire.it/wp-content/uploads/2022/09/Informatics-education_Report.pdf", "locator": "p.12"}, {"id": "std_2017", "card": 2, "claim": "US states with K-12 CS standards, 2017", "value": "6", "check": "quote", "quote": "\"In 2017, only six states had K–12 computer science standards.\"", "source": "Code.org, State of Computer Science 2024", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.10"}, {"id": "std_2018", "card": 2, "claim": "US states with K-12 CS standards, 2018", "value": "22", "check": "quote", "quote": "\"the number of states that have K-12 computer science standards has increased from 6 to 22\"", "source": "Code.org, State of Computer Science 2018", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.17"}, {"id": "std_2019", "card": 2, "claim": "US states with K-12 CS standards, 2019", "value": "34", "check": "quote", "quote": "\"now 34 states have K–12 computer science standards, up from 6 in 2017.\"", "source": "Code.org, State of Computer Science 2019", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.16"}, {"id": "std_2020", "card": 2, "claim": "US states with K-12 CS standards, 2020", "value": "37", "check": "chart", "quote": "Read off the standards-over-time chart in the 2021 report.", "source": "Code.org, State of Computer Science 2021", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.29"}, {"id": "std_2021", "card": 2, "claim": "US states with K-12 CS standards, 2021", "value": "39", "check": "chart", "quote": "Read off the standards-over-time chart in the 2021 report.", "source": "Code.org, State of Computer Science 2021", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.29"}, {"id": "std_2023", "card": 2, "claim": "US states with K-12 CS standards, 2023", "value": "42", "check": "count", "quote": "Counted \"Yes\" rows in the Appendix 1 policy table (one row split across lines in the PDF). The 2022 report gives no single count.", "source": "Code.org, State of Computer Science 2023", "url": "https://advocacy.code.org/stateofcs/", "locator": "Appendix 1"}, {"id": "std_2024", "card": 2, "claim": "US states with K-12 CS standards, 2024", "value": "43", "check": "quote", "quote": "\"Now, in 2024, 43 states have standards.\"", "source": "Code.org, State of Computer Science 2024", "url": "https://advocacy.code.org/stateofcs/", "locator": "p.10"}, {"id": "std_2025", "card": 2, "claim": "US states with K-12 CS standards, 2025", "value": "44", "check": "count", "quote": "Counted the \"standards\" policy marked as met on each state page (one partial excluded).", "source": "CodeAI, State of AI + Computer Science 2025", "url": "https://advocacy.code.org/stateofcs/", "locator": "state pages"}, {"id": "eu_lower", "card": 2, "claim": "Europe: informatics taught at ages 11–14", "value": "35 of 39", "check": "quote", "quote": "\"In general lower secondary education, informatics is taught as a distinct discipline in 35 education systems.\"", "source": "Eurydice (2022), Informatics education at school in Europe", "url": "https://eurydice.indire.it/wp-content/uploads/2022/09/Informatics-education_Report.pdf", "locator": "p.11"}, {"id": "eu_primary", "card": 2, "claim": "Europe: informatics taught in primary", "value": "23 of 39", "check": "quote", "quote": "\"In primary education, informatics is taught as a distinct discipline in 23 education systems.\"", "source": "Eurydice (2022), Informatics education at school in Europe", "url": "https://eurydice.indire.it/wp-content/uploads/2022/09/Informatics-education_Report.pdf", "locator": "p.11"}, {"id": "us_any", "card": 3, "claim": "US high schools teaching any AI topic to some students", "value": "72%", "check": "count", "quote": "Survey item AI5: \"Are any of the topics regarding AI listed taught to any students at your school?\" High/secondary schools: Yes 72% (s.e. 2.0).", "source": "NCES School Pulse Panel, Dec 2024", "url": "https://nces.ed.gov/surveys/spp/docs/release/Technology.xlsx", "locator": "AI5_y"}, {"id": "us_all", "card": 3, "claim": "US high schools teaching AI to all students", "value": "16–25%", "check": "count", "quote": "Survey item AI5, \"All students\": ethical/appropriate uses of AI 25% (s.e. 2.0); technical knowledge 16% (s.e. 2.0). High/secondary schools.", "source": "NCES School Pulse Panel, Dec 2024", "url": "https://nces.ed.gov/surveys/spp/docs/release/Technology.xlsx", "locator": "AI5_1, AI5_2"}, {"id": "us_rand", "card": 3, "claim": "US high-school students given AI guidance by teachers", "value": "21%", "check": "quote", "quote": "\"Smaller percentages of middle school students (14 percent) reported that they received guidance compared with high school students (21 percent).\"", "source": "RAND (2025), RR-A4180-1", "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html", "locator": "p.8"}, {"id": "eu_ai", "card": 3, "claim": "Europe: AI in the lower-secondary curriculum", "value": "12 of 38", "check": "quote", "quote": "\"the national curricula of around one third of the education systems include AI-related competences.\" Count of \"Yes\" in Figure 4.4 / open-data Table 4.3: 12 of 38.", "source": "Eurydice (2026), Digital education at school in Europe", "url": "https://eurydice.eacea.ec.europa.eu/sites/default/files/2026-09/z_Digital_ed_OpenData_2026_without_links.xlsx", "locator": "report p.25, p.127"}, {"id": "ev_818", "card": 4, "claim": "Studies of AI in K-12 education → rigorous ones", "value": "818 → 20", "check": "quote", "quote": "\"We include the 818 papers in the Research Repository as of October 2025. 20 papers had strong enough causal evidence on educators and students to contribute to the key findings.\"", "source": "Stanford SCALE (2026), The Evidence Base on AI in K-12", "url": "https://scale.stanford.edu/sites/default/files/The%20Evidence%20Base%20on%20AI%20in%20K-12%20Report.pdf", "locator": "p.7"}, {"id": "ev_0", "card": 4, "claim": "Rigorous studies on teaching AI literacy", "value": "none", "check": "quote", "quote": "\"there exists no high-quality causal research on the timely topic of developing student and teacher AI literacy.\"", "source": "Stanford SCALE (2026), The Evidence Base on AI in K-12", "url": "https://scale.stanford.edu/sites/default/files/The%20Evidence%20Base%20on%20AI%20in%20K-12%20Report.pdf", "locator": "p.29"}, {"id": "estonia", "card": 4, "claim": "Estonia's 9,000-student study has not reported", "value": "analysis from summer 2026", "check": "quote", "quote": "\"The first student assessment took place in March, and the second at the end of May 2026. Data analysis will begin during the summer of 2026.\"", "source": "AI Leap Foundation (2026), First Annual Review 2025/26", "url": "https://tihupe.ee/wp-content/uploads/2026/08/AI-Leap-First-Annual-Review-202526.pdf", "locator": "p.11"}]};
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-const tip = $('#tip');
-document.addEventListener('mousemove', e => {
-  const t = e.target.closest('[data-tip]');
-  if (!t) { tip.style.opacity = 0; return; }
-  tip.innerHTML = t.dataset.tip; tip.style.opacity = 1;
-  tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px';
-  tip.style.top = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8) + 'px';
-});
+const EVI = Object.fromEntries(DATA.EVID.map(e => [e.id, e]));
+const KIND = { quote: 'Exact quote', count: 'Counted from source data', chart: 'Read from chart', date: 'Date confirmed', calc: 'Our calculation' };
+const badge = k => `<span class="badge b-${k}">${KIND[k]}</span>`;
+const srcLink = e => e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.source)}${e.locator ? ', ' + esc(e.locator) : ''}</a>` : esc(e.source);
+function fill(scope, id, full) {
+  const e = EVI[id], p = scope.querySelector('.proof');
+  p.children[0].innerHTML = `<b>${esc(e.claim)}: ${esc(e.value)}</b>${badge(e.check)}`;
+  p.children[1].innerHTML = srcLink(e);
+  p.children[2].textContent = full || e.check === 'calc' ? e.quote : '';
+}
+function show(t) {
+  const scope = t.closest('[data-scope]');
+  if (!scope || !EVI[t.dataset.ev]) return;
+  scope.querySelectorAll('.sel').forEach(x => x.classList.remove('sel')); t.classList.add('sel');
+  fill(scope, t.dataset.ev, true);
+}
+['mouseover', 'focusin', 'click'].forEach(ev => document.addEventListener(ev, e => { const t = e.target.closest('[data-ev]'); if (t) show(t); }));
 /* horizontal bars: label · bar · value */
 function hbars(el, rows, max, label, L = 130) {
   const W = 460, R = W - 70, rh = 38, H = rows.length * rh, X = v => L + v / max * (R - L);
@@ -163,7 +213,7 @@ function hbars(el, rows, max, label, L = 130) {
   rows.forEach((r, i) => {
     const y = i * rh, c = r.hl ? 'var(--cs)' : 'var(--other)';
     s += `<text x="0" y="${y + 24}" class="${r.hl ? 'hl' : ''}">${r.l}</text>`;
-    s += `<rect x="${L}" y="${y + 8}" width="${Math.max(4, X(r.v) - L)}" height="22" rx="4" fill="${c}" data-tip="${esc(r.t)}"/>`;
+    s += `<rect x="${L}" y="${y + 8}" width="${Math.max(4, X(r.v) - L)}" height="22" rx="4" fill="${c}" data-ev="${r.e}" tabindex="0"/>`;
     s += `<text x="${X(r.v) + 8}" y="${y + 24}" class="${r.hl ? 'hl' : 'v'}">${r.vl}</text>`;
   });
   el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">${s}</svg>`;
@@ -174,13 +224,24 @@ function stack(el, segs, label) {
   let x = 0, s = '';
   segs.forEach(g => {
     const w = g.v / tot * W;
-    s += `<rect x="${x}" y="0" width="${Math.max(0, w - 3)}" height="34" rx="4" fill="${g.c}" data-tip="${esc(g.t)}"/>`;
+    s += `<rect x="${x}" y="0" width="${Math.max(0, w - 3)}" height="34" rx="4" fill="${g.c}" data-ev="${g.e}" tabindex="0"/>`;
     s += `<text x="${x}" y="56" class="${g.c === 'var(--cs)' ? 'hl' : ''}">${g.l}</text>`;
     x += w;
   });
   el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">${s}</svg>`;
 }
 const I = DATA.EUINF, A = DATA.EUAI;
+
+/* evidence table: one row per number, grouped by question */
+(function () {
+  const Q = ['', ...[...document.querySelectorAll('.ask')].map(x => x.textContent)];
+  let last = 0, h = '';
+  DATA.EVID.forEach(e => {
+    if (e.card !== last) { last = e.card; h += `<tr class="grp"><td colspan="5">${esc(Q[e.card])}</td></tr>`; }
+    h += `<tr id="ev-${e.id}"><td>${esc(e.claim)}</td><td class="n">${esc(e.value)}</td><td><span class="${e.check === 'quote' ? 'qt' : ''}">${esc(e.quote)}</span></td><td>${badge(e.check)}</td><td>${srcLink(e)}</td></tr>`;
+  });
+  $('#evtab').innerHTML = h;
+})();
 
 /* 1 · change frequency */
 (function () {
@@ -189,13 +250,13 @@ const I = DATA.EUINF, A = DATA.EUAI;
     const ys = school.filter(d => d.subject === sub).map(d => d.year).sort((a, b) => a - b);
     const rate = (ys.length - 1) / (2026 - ys[0]) * 10;
     return { l: sub === 'Computer science' ? 'CS' : sub, v: rate, vl: rate.toFixed(1), hl: sub === 'Computer science',
-      t: `${sub}: ${ys.length} versions (${ys.join(', ')}) → ${rate.toFixed(2)} rewrites per decade` };
+      e: { 'Computer science': 'cs_versions', Maths: 'maths_versions', Science: 'science_versions', English: 'english_versions', 'Social studies': 'social_versions' }[sub] };
   }), 2, 'Rewrites per decade of US national school standards by subject');
 })();
 stack($('#c1eu'), [
-  { v: I.reform_implementing, l: `${I.reform_implementing} rolling out`, c: 'var(--cs)', t: `${I.reform_implementing} systems implementing an informatics curriculum reform in 2020/21` },
-  { v: I.reform_developing, l: `${I.reform_developing} drafting`, c: 'var(--cs)', t: `${I.reform_developing} systems developing an informatics reform in 2020/21` },
-  { v: I.total - I.reform_implementing - I.reform_developing, l: `${I.total - I.reform_implementing - I.reform_developing} none`, c: 'var(--other)', t: 'No further informatics reform foreseen' }
+  { v: I.reform_implementing, l: `${I.reform_implementing} rolling out`, c: 'var(--cs)', e: 'eu_impl' },
+  { v: I.reform_developing, l: `${I.reform_developing} drafting`, c: 'var(--cs)', e: 'eu_dev' },
+  { v: I.total - I.reform_implementing - I.reform_developing, l: `${I.total - I.reform_implementing - I.reform_developing} none`, c: 'var(--other)', e: 'eu_share' }
 ], 'European education systems reforming informatics in 2020/21');
 
 /* 2 · CS in what schools must teach */
@@ -205,32 +266,33 @@ stack($('#c1eu'), [
   let s = '';
   d.forEach((p, i) => {
     const hl = i === 0 || i === n - 1;
-    s += `<rect x="${X(i) - bw / 2}" y="${Y(p.n)}" width="${bw}" height="${Y(0) - Y(p.n)}" rx="4" fill="${hl ? 'var(--cs)' : 'var(--other)'}" data-tip="${esc(p.year + ': ' + p.n + ' states')}"/>`;
+    s += `<rect x="${X(i) - bw / 2}" y="${Y(p.n)}" width="${bw}" height="${Y(0) - Y(p.n)}" rx="4" fill="${hl ? 'var(--cs)' : 'var(--other)'}" data-ev="std_${p.year}" tabindex="0"/>`;
     s += `<text x="${X(i)}" y="${Y(p.n) - 7}" text-anchor="middle" class="${hl ? 'hl' : 'v'}">${p.n}</text><text x="${X(i)}" y="${H - 4}" text-anchor="middle" class="ax">'${String(p.year).slice(2)}</text>`;
   });
   $('#c2us').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="US states with K-12 CS standards, 2017 to 2025">${s}</svg>`;
 })();
 hbars($('#c2eu'), [
-  { l: 'Ages 11–14', v: I.lower_secondary / I.total * 100, vl: `${I.lower_secondary} of ${I.total}`, hl: true, t: `Lower secondary: informatics taught as a distinct discipline in ${I.lower_secondary} of ${I.total} systems` },
-  { l: 'Primary', v: I.primary / I.total * 100, vl: `${I.primary} of ${I.total}`, t: `Primary: informatics taught as a distinct discipline in ${I.primary} of ${I.total} systems` }
+  { l: 'Ages 11–14', v: I.lower_secondary / I.total * 100, vl: `${I.lower_secondary} of ${I.total}`, hl: true, e: 'eu_lower' },
+  { l: 'Primary', v: I.primary / I.total * 100, vl: `${I.primary} of ${I.total}`, e: 'eu_primary' }
 ], 100, 'European systems teaching informatics as its own discipline, by school level');
 
 /* 3 · AI taught */
 hbars($('#c3us'), [
-  { l: 'Some students', v: 72, vl: '72%', t: 'High schools where an AI topic is taught to some students (NCES, Dec 2024)' },
-  { l: 'All students', v: 20, vl: '~1 in 5', hl: true, t: 'Taught to ALL students: ethical AI use 25%, technical AI 16% (NCES, Dec 2024); 21% of high-school students say a teacher taught them (RAND, 2025)' }
+  { l: 'Some students', v: 72, vl: '72%', e: 'us_any' },
+  { l: 'All students', v: 20, vl: '~1 in 5', hl: true, e: 'us_all' }
 ], 100, 'Share of US high schools teaching AI to some versus all students');
 stack($('#c3eu'), [
-  { v: A.yes, l: `${A.yes} yes`, c: 'var(--cs)', t: `${A.yes} systems include AI competences in the lower-secondary curriculum (2024/25)` },
-  { v: A.pipeline + A.none, l: `${A.pipeline + A.none} not yet`, c: 'var(--other)', t: `No AI in the curriculum yet; ${A.pipeline} of these (Czechia, Slovakia, Ireland, Croatia) have AI curricula adopted or piloted` }
+  { v: A.yes, l: `${A.yes} yes`, c: 'var(--cs)', e: 'eu_ai' },
+  { v: A.pipeline + A.none, l: `${A.pipeline + A.none} not yet`, c: 'var(--other)', e: 'eu_ai' }
 ], 'European systems with AI in the national curriculum');
 
 /* 4 · evidence */
 hbars($('#c4'), [
-  { l: 'Studies of AI', v: 818, vl: '818', t: 'Papers on AI in K-12 education in the Stanford repository (Oct 2025), US and international' },
-  { l: 'Rigorous', v: 20, vl: '20', t: 'High-quality causal studies; high-school studies include the UK, Germany, Belgium/Spain, Turkey, Brazil' },
-  { l: 'On teaching AI', v: 0, vl: '0', hl: true, t: '"No high-quality causal research on … developing student and teacher AI literacy" (Stanford SCALE 2026)' }
+  { l: 'Studies of AI', v: 818, vl: '818', e: 'ev_818' },
+  { l: 'Rigorous', v: 20, vl: '20', e: 'ev_818' },
+  { l: 'On teaching AI', v: 0, vl: '0', hl: true, e: 'ev_0' }
 ], 818, 'From 818 studies to zero rigorous studies on teaching AI');
+document.querySelectorAll('[data-scope]').forEach(sc => fill(sc, sc.dataset.scope, false));
 </script>
 </body>
 </html>

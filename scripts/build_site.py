@@ -43,7 +43,18 @@ EUAI = dict(total=len(eut), yes=int(cur.sum()), pipeline=int((~cur & eut.curricu
 EUAI['none'] = EUAI['total'] - EUAI['yes'] - EUAI['pipeline']
 # Eurydice (2022) Informatics education at school in Europe, Main findings p.9-10 and s.1.5 (reference year 2020/21, 39 systems)
 EUINF = dict(total=39, primary=23, lower_secondary=35, reform_implementing=17, reform_developing=11)
-data = dict(REF=REF, LAG=LAG, STD=STD, SUBJ=SUBJ, EU=EU, EUAI=EUAI, EUINF=EUINF)
+# Evidence register: the source's own words for every number on the page (data/evidence.csv, checked by scripts/check_quotes.py)
+evd = pd.read_csv('data/evidence.csv').fillna('')
+EVID = evd.to_dict(orient='records')
+val = dict(zip(evd.id, evd.value))
+for p in STD:   # chart values must match the register
+    if p['n'] is not None: assert val[f"std_{p['year']}"] == str(p['n']), p
+assert val['eu_impl'] == f"{EUINF['reform_implementing']} of {EUINF['total']}" and val['eu_dev'] == f"{EUINF['reform_developing']} of {EUINF['total']}"
+assert val['eu_lower'] == f"{EUINF['lower_secondary']} of {EUINF['total']}" and val['eu_primary'] == f"{EUINF['primary']} of {EUINF['total']}"
+assert val['eu_ai'] == f"{EUAI['yes']} of {EUAI['total']}", (val['eu_ai'], EUAI)
+hs = nces[(nces.subgroup == 'High/Secondary')].set_index(['var', 'category']).pct
+assert val['us_any'] == f"{hs[('AI5_y', 'Yes')]}%" and val['us_all'] == f"{hs[('AI5_1', 'All students')]}–{hs[('AI5_2', 'All students')]}%"
+data = dict(REF=REF, LAG=LAG, STD=STD, SUBJ=SUBJ, EU=EU, EUAI=EUAI, EUINF=EUINF, EVID=EVID)
 print('EUAI', EUAI, 'EUINF', EUINF)
 tpl = open('site/template.html').read()
 html = tpl.replace('/*__DATA__*/', 'const DATA = ' + json.dumps(data, ensure_ascii=False) + ';')

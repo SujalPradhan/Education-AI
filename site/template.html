@@ -10,6 +10,7 @@
   --bg:#f6f5f1; --surface:#fcfcfb; --line:#e3e0d7;
   --ink:#141413; --ink-2:#55544f; --ink-3:#7b7a73;
   --cs:#eb6834; --other:#b3b1a8; --link:#2a78d6;
+  --ok-bg:#dcfce7; --ok:#15803d; --cnt-bg:#e0f2fe; --cnt:#0369a1; --est:#b45309; --mut-bg:#eceae3;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -17,6 +18,7 @@
     --bg:#121211; --surface:#1a1a19; --line:#33332f;
     --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#9a998f;
     --cs:#e8733f; --other:#5f5e58; --link:#3987e5;
+    --ok-bg:#12351f; --ok:#6ee7a0; --cnt-bg:#0c2c40; --cnt:#7cc8f5; --est:#f0a95b; --mut-bg:#2a2a27;
   }
 }
 :root[data-theme="dark"]{
@@ -24,6 +26,7 @@
   --bg:#121211; --surface:#1a1a19; --line:#33332f;
   --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#9a998f;
   --cs:#e8733f; --other:#5f5e58; --link:#3987e5;
+    --ok-bg:#12351f; --ok:#6ee7a0; --cnt-bg:#0c2c40; --cnt:#7cc8f5; --est:#f0a95b; --mut-bg:#2a2a27;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -46,7 +49,32 @@ svg text{fill:var(--ink-2);font-size:14px;font-family:inherit}
 svg text.v{fill:var(--ink);font-weight:700}
 svg text.hl{fill:var(--cs);font-weight:700}
 svg text.ax{fill:var(--ink-3);font-size:12px}
-#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--surface);font-size:13px;padding:8px 10px;border-radius:8px;max-width:280px;opacity:0;z-index:10;line-height:1.4}
+.sub{color:var(--ink-2);margin:0;font-size:15px}
+.key{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0;font-size:13px;color:var(--ink-2);align-items:center}
+.badge{display:inline-block;padding:2px 7px;border-radius:5px;font-size:11px;font-weight:700;white-space:nowrap}
+.b-quote{background:var(--ok-bg);color:var(--ok)}
+.b-count{background:var(--cnt-bg);color:var(--cnt)}
+.b-chart{color:var(--est);border:1px dashed var(--est);padding:1px 6px}
+.b-date,.b-calc{background:var(--mut-bg);color:var(--ink-2)}
+.proof{border-left:3px solid var(--cs);background:var(--bg);border-radius:0 8px 8px 0;padding:8px 12px;margin:14px 0 0;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.proof b{color:var(--ink);font-size:13px}
+.proof .badge{margin-left:6px;vertical-align:1px}
+.proof .pv a{color:var(--ink-2)}
+.proof .pq{font-style:italic;margin-top:4px}
+.proof .pq:empty{display:none}
+[data-ev]{cursor:pointer;outline:none}
+rect[data-ev]:hover,rect[data-ev]:focus-visible,rect.sel{stroke:var(--ink);stroke-width:2}
+p[data-ev]{border-bottom:1px dotted var(--ink-3);display:inline}
+#sources h2{font-size:24px;margin:0 0 4px}
+.tw{overflow-x:auto;margin-top:14px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+td:first-child{color:var(--ink);width:26%}
+td.n{font-weight:700;color:var(--ink);white-space:nowrap}
+td .qt{font-style:italic}
+tr.grp td{background:var(--bg);font-weight:700;color:var(--ink);font-size:12px;letter-spacing:.04em}
+tr.hit td{background:var(--ok-bg)}
 details{margin-top:36px;font-size:14px;color:var(--ink-2)}
 summary{cursor:pointer;font-weight:600;color:var(--ink)}
 ol{padding-left:24px} li{margin-bottom:5px}
@@ -56,20 +84,24 @@ a{color:var(--link)}
 <body>
 <main>
 <h1>Computer science and AI in schools: US vs Europe</h1>
+<p class="sub">Every chart shows its evidence underneath; tap any bar for the source's exact words. Every number links to the original document; quotes were matched word-for-word against saved copies on 13 Oct 2026. <a href="#sources">All sources ↓</a></p>
+<div class="key"><span class="badge b-quote">Exact quote</span><span class="badge b-count">Counted from source data</span><span class="badge b-chart">Read from chart</span><span class="badge b-date">Date confirmed</span><span class="badge b-calc">Our calculation</span></div>
 
 <section class="card">
   <p class="ask">How often does the CS curriculum change?</p>
   <div class="pair">
-    <div>
+    <div data-scope="rate">
       <p class="who">US</p>
-      <p class="ans"><em>3–5×</em> more often than other subjects</p>
+      <p class="ans"><em data-ev="rate" tabindex="0" style="border-bottom:2px dotted">3–5×</em> more often than other subjects</p>
       <div id="c1us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">National school standards, rewrites per decade <a href="#r1">[1]</a>–<a href="#r8">[8]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_share">
       <p class="who">EUROPE</p>
-      <p class="ans"><em>7 in 10</em> systems were rewriting it at once</p>
+      <p class="ans"><em data-ev="eu_share" tabindex="0" style="border-bottom:2px dotted">7 in 10</em> systems were rewriting it at once</p>
       <div id="c1eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">39 education systems, 2020/21 <a href="#r13">[13]</a></p>
     </div>
   </div>
@@ -78,16 +110,18 @@ a{color:var(--link)}
 <section class="card">
   <p class="ask">Is CS part of what schools must teach?</p>
   <div class="pair">
-    <div>
+    <div data-scope="std_2025">
       <p class="who">US</p>
       <p class="ans"><em>6 → 44</em> states set CS standards in 8 years</p>
       <div id="c2us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">States with K-12 CS standards <a href="#r9">[9]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_lower">
       <p class="who">EUROPE</p>
       <p class="ans">Taught in <em>9 in 10</em> systems by age 11–14</p>
       <div id="c2eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">Informatics as its own discipline, 39 systems, 2020/21 <a href="#r13">[13]</a></p>
     </div>
   </div>
@@ -96,16 +130,18 @@ a{color:var(--link)}
 <section class="card">
   <p class="ask">Is AI being taught in schools?</p>
   <div class="pair">
-    <div>
+    <div data-scope="us_all">
       <p class="who">US</p>
       <p class="ans">To some students. <em>Rarely to all.</em></p>
       <div id="c3us"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">US high schools, 2024–25 <a href="#r10">[10]</a> <a href="#r11">[11]</a></p>
     </div>
-    <div>
+    <div data-scope="eu_ai">
       <p class="who">EUROPE</p>
       <p class="ans">In <em>1 in 3</em> national curricula</p>
       <div id="c3eu"></div>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
       <p class="src">AI in the lower-secondary curriculum, 38 systems, 2024/25 <a href="#r14">[14]</a></p>
     </div>
   </div>
@@ -113,17 +149,23 @@ a{color:var(--link)}
 
 <section class="card">
   <p class="ask">Does teaching AI work?</p>
-  <div class="pair">
+  <div class="pair" data-scope="ev_0">
     <div>
       <p class="ans one"><em>Unknown.</em> Not one rigorous study, anywhere.</p>
-      <p class="src">Stanford review of AI in K-12 education, 2026 <a href="#r12">[12]</a>. Europe's largest test (Estonia, 9,000+ students) has not reported yet <a href="#r15">[15]</a></p>
+      <div class="proof" aria-live="polite"><div></div><div class="pv"></div><div class="pq"></div></div>
+      <p class="src">Stanford review of AI in K-12 education, 2026 <a href="#r12">[12]</a>. <span data-ev="estonia" tabindex="0" style="border-bottom:1px dotted">Europe's largest test (Estonia, 9,000+ students) has not reported yet</span> <a href="#r15">[15]</a></p>
     </div>
     <div id="c4"></div>
   </div>
 </section>
 
+<section class="card" id="sources">
+  <h2>Where the numbers come from</h2>
+  <p class="sub">One row per number on this page, with what the source actually says.</p>
+  <div class="tw"><table><thead><tr><th>Number</th><th>Value</th><th>What the source says</th><th>Check</th><th>Source</th></tr></thead><tbody id="evtab"></tbody></table></div>
+</section>
 <details>
-  <summary>Sources</summary>
+  <summary>All 15 documents</summary>
   <ol>
     <li id="r1">CSTA (2026). <a href="https://csteachers.org/wp-content/uploads/2026/07/2026-CSTA-PK%E2%80%9312-Computer-Science-Standards.pdf">2026 CSTA PK–12 CS Standards</a>: CS versions 2003, 2006, 2011, 2017, 2026.</li>
     <li id="r2">NCTM (2000). <a href="https://nctm.org/News-and-Calendar/Messages-from-the-President/Archive/Glenda-Lappan/We-Have-Our-Principles-and-Standards_-What-Now_">Principles and Standards for School Mathematics</a>; Ferrini-Mundy, <a href="https://www.ams.org/journals/notices/200008/comm-ferrini.pdf">Notices of the AMS (2000)</a>: maths 1989, 2000.</li>
@@ -143,19 +185,27 @@ a{color:var(--link)}
   </ol>
 </details>
 </main>
-<div id="tip" role="tooltip"></div>
 <script>
 /*__DATA__*/
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-const tip = $('#tip');
-document.addEventListener('mousemove', e => {
-  const t = e.target.closest('[data-tip]');
-  if (!t) { tip.style.opacity = 0; return; }
-  tip.innerHTML = t.dataset.tip; tip.style.opacity = 1;
-  tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px';
-  tip.style.top = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8) + 'px';
-});
+const EVI = Object.fromEntries(DATA.EVID.map(e => [e.id, e]));
+const KIND = { quote: 'Exact quote', count: 'Counted from source data', chart: 'Read from chart', date: 'Date confirmed', calc: 'Our calculation' };
+const badge = k => `<span class="badge b-${k}">${KIND[k]}</span>`;
+const srcLink = e => e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.source)}${e.locator ? ', ' + esc(e.locator) : ''}</a>` : esc(e.source);
+function fill(scope, id, full) {
+  const e = EVI[id], p = scope.querySelector('.proof');
+  p.children[0].innerHTML = `<b>${esc(e.claim)}: ${esc(e.value)}</b>${badge(e.check)}`;
+  p.children[1].innerHTML = srcLink(e);
+  p.children[2].textContent = full || e.check === 'calc' ? e.quote : '';
+}
+function show(t) {
+  const scope = t.closest('[data-scope]');
+  if (!scope || !EVI[t.dataset.ev]) return;
+  scope.querySelectorAll('.sel').forEach(x => x.classList.remove('sel')); t.classList.add('sel');
+  fill(scope, t.dataset.ev, true);
+}
+['mouseover', 'focusin', 'click'].forEach(ev => document.addEventListener(ev, e => { const t = e.target.closest('[data-ev]'); if (t) show(t); }));
 /* horizontal bars: label · bar · value */
 function hbars(el, rows, max, label, L = 130) {
   const W = 460, R = W - 70, rh = 38, H = rows.length * rh, X = v => L + v / max * (R - L);
@@ -163,7 +213,7 @@ function hbars(el, rows, max, label, L = 130) {
   rows.forEach((r, i) => {
     const y = i * rh, c = r.hl ? 'var(--cs)' : 'var(--other)';
     s += `<text x="0" y="${y + 24}" class="${r.hl ? 'hl' : ''}">${r.l}</text>`;
-    s += `<rect x="${L}" y="${y + 8}" width="${Math.max(4, X(r.v) - L)}" height="22" rx="4" fill="${c}" data-tip="${esc(r.t)}"/>`;
+    s += `<rect x="${L}" y="${y + 8}" width="${Math.max(4, X(r.v) - L)}" height="22" rx="4" fill="${c}" data-ev="${r.e}" tabindex="0"/>`;
     s += `<text x="${X(r.v) + 8}" y="${y + 24}" class="${r.hl ? 'hl' : 'v'}">${r.vl}</text>`;
   });
   el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">${s}</svg>`;
@@ -174,13 +224,24 @@ function stack(el, segs, label) {
   let x = 0, s = '';
   segs.forEach(g => {
     const w = g.v / tot * W;
-    s += `<rect x="${x}" y="0" width="${Math.max(0, w - 3)}" height="34" rx="4" fill="${g.c}" data-tip="${esc(g.t)}"/>`;
+    s += `<rect x="${x}" y="0" width="${Math.max(0, w - 3)}" height="34" rx="4" fill="${g.c}" data-ev="${g.e}" tabindex="0"/>`;
     s += `<text x="${x}" y="56" class="${g.c === 'var(--cs)' ? 'hl' : ''}">${g.l}</text>`;
     x += w;
   });
   el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">${s}</svg>`;
 }
 const I = DATA.EUINF, A = DATA.EUAI;
+
+/* evidence table: one row per number, grouped by question */
+(function () {
+  const Q = ['', ...[...document.querySelectorAll('.ask')].map(x => x.textContent)];
+  let last = 0, h = '';
+  DATA.EVID.forEach(e => {
+    if (e.card !== last) { last = e.card; h += `<tr class="grp"><td colspan="5">${esc(Q[e.card])}</td></tr>`; }
+    h += `<tr id="ev-${e.id}"><td>${esc(e.claim)}</td><td class="n">${esc(e.value)}</td><td><span class="${e.check === 'quote' ? 'qt' : ''}">${esc(e.quote)}</span></td><td>${badge(e.check)}</td><td>${srcLink(e)}</td></tr>`;
+  });
+  $('#evtab').innerHTML = h;
+})();
 
 /* 1 · change frequency */
 (function () {
@@ -189,13 +250,13 @@ const I = DATA.EUINF, A = DATA.EUAI;
     const ys = school.filter(d => d.subject === sub).map(d => d.year).sort((a, b) => a - b);
     const rate = (ys.length - 1) / (2026 - ys[0]) * 10;
     return { l: sub === 'Computer science' ? 'CS' : sub, v: rate, vl: rate.toFixed(1), hl: sub === 'Computer science',
-      t: `${sub}: ${ys.length} versions (${ys.join(', ')}) → ${rate.toFixed(2)} rewrites per decade` };
+      e: { 'Computer science': 'cs_versions', Maths: 'maths_versions', Science: 'science_versions', English: 'english_versions', 'Social studies': 'social_versions' }[sub] };
   }), 2, 'Rewrites per decade of US national school standards by subject');
 })();
 stack($('#c1eu'), [
-  { v: I.reform_implementing, l: `${I.reform_implementing} rolling out`, c: 'var(--cs)', t: `${I.reform_implementing} systems implementing an informatics curriculum reform in 2020/21` },
-  { v: I.reform_developing, l: `${I.reform_developing} drafting`, c: 'var(--cs)', t: `${I.reform_developing} systems developing an informatics reform in 2020/21` },
-  { v: I.total - I.reform_implementing - I.reform_developing, l: `${I.total - I.reform_implementing - I.reform_developing} none`, c: 'var(--other)', t: 'No further informatics reform foreseen' }
+  { v: I.reform_implementing, l: `${I.reform_implementing} rolling out`, c: 'var(--cs)', e: 'eu_impl' },
+  { v: I.reform_developing, l: `${I.reform_developing} drafting`, c: 'var(--cs)', e: 'eu_dev' },
+  { v: I.total - I.reform_implementing - I.reform_developing, l: `${I.total - I.reform_implementing - I.reform_developing} none`, c: 'var(--other)', e: 'eu_share' }
 ], 'European education systems reforming informatics in 2020/21');
 
 /* 2 · CS in what schools must teach */
@@ -205,32 +266,33 @@ stack($('#c1eu'), [
   let s = '';
   d.forEach((p, i) => {
     const hl = i === 0 || i === n - 1;
-    s += `<rect x="${X(i) - bw / 2}" y="${Y(p.n)}" width="${bw}" height="${Y(0) - Y(p.n)}" rx="4" fill="${hl ? 'var(--cs)' : 'var(--other)'}" data-tip="${esc(p.year + ': ' + p.n + ' states')}"/>`;
+    s += `<rect x="${X(i) - bw / 2}" y="${Y(p.n)}" width="${bw}" height="${Y(0) - Y(p.n)}" rx="4" fill="${hl ? 'var(--cs)' : 'var(--other)'}" data-ev="std_${p.year}" tabindex="0"/>`;
     s += `<text x="${X(i)}" y="${Y(p.n) - 7}" text-anchor="middle" class="${hl ? 'hl' : 'v'}">${p.n}</text><text x="${X(i)}" y="${H - 4}" text-anchor="middle" class="ax">'${String(p.year).slice(2)}</text>`;
   });
   $('#c2us').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="US states with K-12 CS standards, 2017 to 2025">${s}</svg>`;
 })();
 hbars($('#c2eu'), [
-  { l: 'Ages 11–14', v: I.lower_secondary / I.total * 100, vl: `${I.lower_secondary} of ${I.total}`, hl: true, t: `Lower secondary: informatics taught as a distinct discipline in ${I.lower_secondary} of ${I.total} systems` },
-  { l: 'Primary', v: I.primary / I.total * 100, vl: `${I.primary} of ${I.total}`, t: `Primary: informatics taught as a distinct discipline in ${I.primary} of ${I.total} systems` }
+  { l: 'Ages 11–14', v: I.lower_secondary / I.total * 100, vl: `${I.lower_secondary} of ${I.total}`, hl: true, e: 'eu_lower' },
+  { l: 'Primary', v: I.primary / I.total * 100, vl: `${I.primary} of ${I.total}`, e: 'eu_primary' }
 ], 100, 'European systems teaching informatics as its own discipline, by school level');
 
 /* 3 · AI taught */
 hbars($('#c3us'), [
-  { l: 'Some students', v: 72, vl: '72%', t: 'High schools where an AI topic is taught to some students (NCES, Dec 2024)' },
-  { l: 'All students', v: 20, vl: '~1 in 5', hl: true, t: 'Taught to ALL students: ethical AI use 25%, technical AI 16% (NCES, Dec 2024); 21% of high-school students say a teacher taught them (RAND, 2025)' }
+  { l: 'Some students', v: 72, vl: '72%', e: 'us_any' },
+  { l: 'All students', v: 20, vl: '~1 in 5', hl: true, e: 'us_all' }
 ], 100, 'Share of US high schools teaching AI to some versus all students');
 stack($('#c3eu'), [
-  { v: A.yes, l: `${A.yes} yes`, c: 'var(--cs)', t: `${A.yes} systems include AI competences in the lower-secondary curriculum (2024/25)` },
-  { v: A.pipeline + A.none, l: `${A.pipeline + A.none} not yet`, c: 'var(--other)', t: `No AI in the curriculum yet; ${A.pipeline} of these (Czechia, Slovakia, Ireland, Croatia) have AI curricula adopted or piloted` }
+  { v: A.yes, l: `${A.yes} yes`, c: 'var(--cs)', e: 'eu_ai' },
+  { v: A.pipeline + A.none, l: `${A.pipeline + A.none} not yet`, c: 'var(--other)', e: 'eu_ai' }
 ], 'European systems with AI in the national curriculum');
 
 /* 4 · evidence */
 hbars($('#c4'), [
-  { l: 'Studies of AI', v: 818, vl: '818', t: 'Papers on AI in K-12 education in the Stanford repository (Oct 2025), US and international' },
-  { l: 'Rigorous', v: 20, vl: '20', t: 'High-quality causal studies; high-school studies include the UK, Germany, Belgium/Spain, Turkey, Brazil' },
-  { l: 'On teaching AI', v: 0, vl: '0', hl: true, t: '"No high-quality causal research on … developing student and teacher AI literacy" (Stanford SCALE 2026)' }
+  { l: 'Studies of AI', v: 818, vl: '818', e: 'ev_818' },
+  { l: 'Rigorous', v: 20, vl: '20', e: 'ev_818' },
+  { l: 'On teaching AI', v: 0, vl: '0', hl: true, e: 'ev_0' }
 ], 818, 'From 818 studies to zero rigorous studies on teaching AI');
+document.querySelectorAll('[data-scope]').forEach(sc => fill(sc, sc.dataset.scope, false));
 </script>
 </body>
 </html>
