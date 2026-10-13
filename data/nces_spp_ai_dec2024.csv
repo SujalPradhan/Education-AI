@@ -1,0 +1,411 @@
+sheet,month,subgroup,var,desc,category,pct,se
+All Schools,2024-12,All public schools,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,26,1.2
+All Schools,2024-12,All public schools,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,33,1
+All Schools,2024-12,All public schools,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,37,1.1
+All Schools,2024-12,All public schools,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,4,0.5
+All Schools,2024-12,All public schools,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+All Schools,2024-12,All public schools,AI3,Does your school have access to any AI-based tutoring systems?,Yes,12,0.9
+All Schools,2024-12,All public schools,AI3,Does your school have access to any AI-based tutoring systems?,No,77,1.1
+All Schools,2024-12,All public schools,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,11,1
+All Schools,2024-12,All public schools,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+All Schools,2024-12,All public schools,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,31,1.2
+All Schools,2024-12,All public schools,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,49,1.4
+All Schools,2024-12,All public schools,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,20,1.2
+All Schools,2024-12,All public schools,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+All Schools,2024-12,All public schools,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,0.6
+All Schools,2024-12,All public schools,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,26,1.4
+All Schools,2024-12,All public schools,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,51,1.2
+All Schools,2024-12,All public schools,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,15,1
+All Schools,2024-12,All public schools,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+All Schools,2024-12,All public schools,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,14,0.9
+All Schools,2024-12,All public schools,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,29,1.4
+All Schools,2024-12,All public schools,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,44,1.2
+All Schools,2024-12,All public schools,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,13,1
+All Schools,2024-12,All public schools,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+All Schools,2024-12,All public schools,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,11,0.8
+All Schools,2024-12,All public schools,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,27,1.3
+All Schools,2024-12,All public schools,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,46,1.2
+All Schools,2024-12,All public schools,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,16,0.9
+All Schools,2024-12,All public schools,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,#,0.1
+All Schools,2024-12,All public schools,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,4,0.5
+All Schools,2024-12,All public schools,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,14,0.9
+All Schools,2024-12,All public schools,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,47,1.2
+All Schools,2024-12,All public schools,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,34,1.4
+All Schools,2024-12,All public schools,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.2
+All Schools,2024-12,All public schools,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,47,1.2
+All Schools,2024-12,All public schools,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,40,1.2
+All Schools,2024-12,All public schools,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,13,0.9
+All Schools,2024-12,All public schools,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+All Schools,2024-12,All public schools,DL1,Does your school offer training on digital literacy for your students?,Yes,68,1.3
+All Schools,2024-12,All public schools,DL1,Does your school offer training on digital literacy for your students?,No,32,1.3
+All Schools,2024-12,All public schools,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+All Schools,2024-12,All public schools,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+School Level,2024-12,Elementary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,24,1.7
+School Level,2024-12,Elementary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,33,1.5
+School Level,2024-12,Elementary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,40,1.8
+School Level,2024-12,Elementary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,4,0.7
+School Level,2024-12,Elementary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+School Level,2024-12,Elementary,AI3,Does your school have access to any AI-based tutoring systems?,Yes,13,1.2
+School Level,2024-12,Elementary,AI3,Does your school have access to any AI-based tutoring systems?,No,76,1.5
+School Level,2024-12,Elementary,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,11,1.2
+School Level,2024-12,Elementary,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+School Level,2024-12,Elementary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,27,1.7
+School Level,2024-12,Elementary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,47,2.1
+School Level,2024-12,Elementary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,26,1.9
+School Level,2024-12,Elementary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+School Level,2024-12,Elementary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,4,0.6
+School Level,2024-12,Elementary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,17,1.4
+School Level,2024-12,Elementary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,63,1.6
+School Level,2024-12,Elementary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,15,1.4
+School Level,2024-12,Elementary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+School Level,2024-12,Elementary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,7,0.9
+School Level,2024-12,Elementary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,21,1.5
+School Level,2024-12,Elementary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,59,1.8
+School Level,2024-12,Elementary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,14,1.6
+School Level,2024-12,Elementary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+School Level,2024-12,Elementary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,6,0.8
+School Level,2024-12,Elementary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,19,1.5
+School Level,2024-12,Elementary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,59,1.8
+School Level,2024-12,Elementary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,16,1.4
+School Level,2024-12,Elementary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,#,0.2
+School Level,2024-12,Elementary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,2,0.6
+School Level,2024-12,Elementary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,10,1.2
+School Level,2024-12,Elementary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,60,1.8
+School Level,2024-12,Elementary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,28,1.8
+School Level,2024-12,Elementary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.3
+School Level,2024-12,Elementary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,32,1.9
+School Level,2024-12,Elementary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,54,1.9
+School Level,2024-12,Elementary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,15,1.5
+School Level,2024-12,Elementary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+School Level,2024-12,Elementary,DL1,Does your school offer training on digital literacy for your students?,Yes,70,1.6
+School Level,2024-12,Elementary,DL1,Does your school offer training on digital literacy for your students?,No,30,1.6
+School Level,2024-12,Elementary,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+School Level,2024-12,Elementary,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,30,2.3
+School Level,2024-12,Middle/Combined,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,33,2.7
+School Level,2024-12,Middle/Combined,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,33,2.9
+School Level,2024-12,Middle/Combined,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,4,1.3
+School Level,2024-12,Middle/Combined,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+School Level,2024-12,Middle/Combined,AI3,Does your school have access to any AI-based tutoring systems?,Yes,11,1.9
+School Level,2024-12,Middle/Combined,AI3,Does your school have access to any AI-based tutoring systems?,No,79,3
+School Level,2024-12,Middle/Combined,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,10,2.2
+School Level,2024-12,Middle/Combined,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,29,2.7
+School Level,2024-12,Middle/Combined,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,57,3
+School Level,2024-12,Middle/Combined,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,15,2.7
+School Level,2024-12,Middle/Combined,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,10,1.7
+School Level,2024-12,Middle/Combined,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,32,3
+School Level,2024-12,Middle/Combined,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,43,3
+School Level,2024-12,Middle/Combined,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,15,2.1
+School Level,2024-12,Middle/Combined,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,21,2.5
+School Level,2024-12,Middle/Combined,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,35,3.2
+School Level,2024-12,Middle/Combined,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,31,2.8
+School Level,2024-12,Middle/Combined,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,13,2
+School Level,2024-12,Middle/Combined,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,16,2.1
+School Level,2024-12,Middle/Combined,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,32,2.8
+School Level,2024-12,Middle/Combined,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,35,2.9
+School Level,2024-12,Middle/Combined,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,17,2.1
+School Level,2024-12,Middle/Combined,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,5,1.3
+School Level,2024-12,Middle/Combined,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,17,1.9
+School Level,2024-12,Middle/Combined,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,38,2.7
+School Level,2024-12,Middle/Combined,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,41,2.6
+School Level,2024-12,Middle/Combined,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,‡,†
+School Level,2024-12,Middle/Combined,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,59,2.9
+School Level,2024-12,Middle/Combined,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,28,2.7
+School Level,2024-12,Middle/Combined,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,14,2.1
+School Level,2024-12,Middle/Combined,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+School Level,2024-12,Middle/Combined,DL1,Does your school offer training on digital literacy for your students?,Yes,72,2.4
+School Level,2024-12,Middle/Combined,DL1,Does your school offer training on digital literacy for your students?,No,28,2.4
+School Level,2024-12,Middle/Combined,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+School Level,2024-12,Middle/Combined,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+School Level,2024-12,High/Secondary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,30,2.5
+School Level,2024-12,High/Secondary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,34,2.4
+School Level,2024-12,High/Secondary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,33,2.5
+School Level,2024-12,High/Secondary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,3,1.2
+School Level,2024-12,High/Secondary,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+School Level,2024-12,High/Secondary,AI3,Does your school have access to any AI-based tutoring systems?,Yes,11,2
+School Level,2024-12,High/Secondary,AI3,Does your school have access to any AI-based tutoring systems?,No,78,2.5
+School Level,2024-12,High/Secondary,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,11,1.7
+School Level,2024-12,High/Secondary,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+School Level,2024-12,High/Secondary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,43,2.3
+School Level,2024-12,High/Secondary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,45,2.4
+School Level,2024-12,High/Secondary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,12,1.7
+School Level,2024-12,High/Secondary,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+School Level,2024-12,High/Secondary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,16,2
+School Level,2024-12,High/Secondary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,39,2.7
+School Level,2024-12,High/Secondary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,33,2.5
+School Level,2024-12,High/Secondary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,13,1.7
+School Level,2024-12,High/Secondary,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+School Level,2024-12,High/Secondary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,25,2
+School Level,2024-12,High/Secondary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,43,2.6
+School Level,2024-12,High/Secondary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,22,2
+School Level,2024-12,High/Secondary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,10,1.5
+School Level,2024-12,High/Secondary,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+School Level,2024-12,High/Secondary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,17,2.1
+School Level,2024-12,High/Secondary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,43,2.5
+School Level,2024-12,High/Secondary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,25,1.9
+School Level,2024-12,High/Secondary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,15,2.1
+School Level,2024-12,High/Secondary,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+School Level,2024-12,High/Secondary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,8,1.4
+School Level,2024-12,High/Secondary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,23,2.3
+School Level,2024-12,High/Secondary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,26,2
+School Level,2024-12,High/Secondary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,43,2.4
+School Level,2024-12,High/Secondary,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.5
+School Level,2024-12,High/Secondary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,72,2
+School Level,2024-12,High/Secondary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,18,1.9
+School Level,2024-12,High/Secondary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,10,1.4
+School Level,2024-12,High/Secondary,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+School Level,2024-12,High/Secondary,DL1,Does your school offer training on digital literacy for your students?,Yes,61,2.7
+School Level,2024-12,High/Secondary,DL1,Does your school offer training on digital literacy for your students?,No,39,2.7
+School Level,2024-12,High/Secondary,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+School Level,2024-12,High/Secondary,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,25,3.1
+Poverty,2024-12,Higher school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,30,2.8
+Poverty,2024-12,Higher school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,42,3.2
+Poverty,2024-12,Higher school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,4,1.2
+Poverty,2024-12,Higher school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Yes,10,1.9
+Poverty,2024-12,Higher school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,No,79,2.5
+Poverty,2024-12,Higher school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,12,2.2
+Poverty,2024-12,Higher school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,24,3
+Poverty,2024-12,Higher school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,52,3.6
+Poverty,2024-12,Higher school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,23,2.6
+Poverty,2024-12,Higher school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,1.7
+Poverty,2024-12,Higher school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,20,2.6
+Poverty,2024-12,Higher school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,58,2.6
+Poverty,2024-12,Higher school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,13,2.3
+Poverty,2024-12,Higher school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,12,1.7
+Poverty,2024-12,Higher school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,26,3.1
+Poverty,2024-12,Higher school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,52,2.9
+Poverty,2024-12,Higher school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,10,2.1
+Poverty,2024-12,Higher school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,9,1.5
+Poverty,2024-12,Higher school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,21,2.5
+Poverty,2024-12,Higher school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,56,2.9
+Poverty,2024-12,Higher school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,14,2.4
+Poverty,2024-12,Higher school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,3,1
+Poverty,2024-12,Higher school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,12,1.9
+Poverty,2024-12,Higher school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,56,3
+Poverty,2024-12,Higher school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,29,2.9
+Poverty,2024-12,Higher school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,39,3.1
+Poverty,2024-12,Higher school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,49,2.7
+Poverty,2024-12,Higher school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,12,2.2
+Poverty,2024-12,Higher school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Yes,62,3.4
+Poverty,2024-12,Higher school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,No,38,3.4
+Poverty,2024-12,Higher school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Poverty,2024-12,Higher school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,27,1.2
+Poverty,2024-12,Lower school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,34,1.2
+Poverty,2024-12,Lower school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,35,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,3,0.5
+Poverty,2024-12,Lower school neighborhood poverty,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Yes,13,1.1
+Poverty,2024-12,Lower school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,No,77,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,11,1
+Poverty,2024-12,Lower school neighborhood poverty,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,33,1.4
+Poverty,2024-12,Lower school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,47,1.6
+Poverty,2024-12,Lower school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,20,1.4
+Poverty,2024-12,Lower school neighborhood poverty,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,0.8
+Poverty,2024-12,Lower school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,27,1.4
+Poverty,2024-12,Lower school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,50,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,15,1
+Poverty,2024-12,Lower school neighborhood poverty,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,15,1.1
+Poverty,2024-12,Lower school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,30,1.4
+Poverty,2024-12,Lower school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,42,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,13,0.9
+Poverty,2024-12,Lower school neighborhood poverty,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,11,1.1
+Poverty,2024-12,Lower school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,29,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,43,1.5
+Poverty,2024-12,Lower school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,17,1
+Poverty,2024-12,Lower school neighborhood poverty,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,#,0.2
+Poverty,2024-12,Lower school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,4,0.6
+Poverty,2024-12,Lower school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,15,1
+Poverty,2024-12,Lower school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,45,1.4
+Poverty,2024-12,Lower school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,36,1.6
+Poverty,2024-12,Lower school neighborhood poverty,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,49,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,37,1.3
+Poverty,2024-12,Lower school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,14,0.9
+Poverty,2024-12,Lower school neighborhood poverty,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Yes,70,1.4
+Poverty,2024-12,Lower school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,No,30,1.4
+Poverty,2024-12,Lower school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Poverty,2024-12,Lower school neighborhood poverty,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Locale,2024-12,City,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,19,2.4
+Locale,2024-12,City,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,29,2.7
+Locale,2024-12,City,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,46,2.5
+Locale,2024-12,City,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,5,1.3
+Locale,2024-12,City,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Locale,2024-12,City,AI3,Does your school have access to any AI-based tutoring systems?,Yes,14,2.3
+Locale,2024-12,City,AI3,Does your school have access to any AI-based tutoring systems?,No,74,2.8
+Locale,2024-12,City,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,12,2.4
+Locale,2024-12,City,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Locale,2024-12,City,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,30,2.4
+Locale,2024-12,City,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,44,2.9
+Locale,2024-12,City,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,27,2.7
+Locale,2024-12,City,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Locale,2024-12,City,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,1.5
+Locale,2024-12,City,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,21,2.8
+Locale,2024-12,City,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,57,2.9
+Locale,2024-12,City,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,14,2
+Locale,2024-12,City,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Locale,2024-12,City,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,12,1.6
+Locale,2024-12,City,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,27,2.8
+Locale,2024-12,City,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,49,2.8
+Locale,2024-12,City,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,12,1.8
+Locale,2024-12,City,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Locale,2024-12,City,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,9,1.4
+Locale,2024-12,City,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,25,2.5
+Locale,2024-12,City,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,50,2.6
+Locale,2024-12,City,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,16,2.1
+Locale,2024-12,City,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+Locale,2024-12,City,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,4,1
+Locale,2024-12,City,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,13,2.1
+Locale,2024-12,City,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,52,2.9
+Locale,2024-12,City,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,32,2.3
+Locale,2024-12,City,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,‡,†
+Locale,2024-12,City,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,42,2.8
+Locale,2024-12,City,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,45,2.7
+Locale,2024-12,City,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,13,1.8
+Locale,2024-12,City,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Locale,2024-12,City,DL1,Does your school offer training on digital literacy for your students?,Yes,68,2.8
+Locale,2024-12,City,DL1,Does your school offer training on digital literacy for your students?,No,32,2.8
+Locale,2024-12,City,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Locale,2024-12,City,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Locale,2024-12,Suburban,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,32,2.3
+Locale,2024-12,Suburban,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,33,2.1
+Locale,2024-12,Suburban,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,32,2
+Locale,2024-12,Suburban,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,4,1
+Locale,2024-12,Suburban,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Locale,2024-12,Suburban,AI3,Does your school have access to any AI-based tutoring systems?,Yes,12,1.7
+Locale,2024-12,Suburban,AI3,Does your school have access to any AI-based tutoring systems?,No,79,2
+Locale,2024-12,Suburban,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,9,1.4
+Locale,2024-12,Suburban,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Locale,2024-12,Suburban,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,30,1.7
+Locale,2024-12,Suburban,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,50,2.5
+Locale,2024-12,Suburban,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,20,2
+Locale,2024-12,Suburban,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Locale,2024-12,Suburban,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,1.1
+Locale,2024-12,Suburban,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,26,1.8
+Locale,2024-12,Suburban,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,50,1.9
+Locale,2024-12,Suburban,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,16,2
+Locale,2024-12,Suburban,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Locale,2024-12,Suburban,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,14,1.5
+Locale,2024-12,Suburban,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,28,1.6
+Locale,2024-12,Suburban,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,43,1.8
+Locale,2024-12,Suburban,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,14,1.9
+Locale,2024-12,Suburban,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Locale,2024-12,Suburban,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,11,1.5
+Locale,2024-12,Suburban,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,28,1.9
+Locale,2024-12,Suburban,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,45,1.8
+Locale,2024-12,Suburban,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,17,1.7
+Locale,2024-12,Suburban,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,1,0.4
+Locale,2024-12,Suburban,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,4,0.9
+Locale,2024-12,Suburban,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,18,1.8
+Locale,2024-12,Suburban,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,44,1.9
+Locale,2024-12,Suburban,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,34,1.8
+Locale,2024-12,Suburban,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.4
+Locale,2024-12,Suburban,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,47,2.1
+Locale,2024-12,Suburban,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,38,1.8
+Locale,2024-12,Suburban,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,15,1.9
+Locale,2024-12,Suburban,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Locale,2024-12,Suburban,DL1,Does your school offer training on digital literacy for your students?,Yes,71,2.2
+Locale,2024-12,Suburban,DL1,Does your school offer training on digital literacy for your students?,No,29,2.2
+Locale,2024-12,Suburban,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Locale,2024-12,Suburban,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Locale,2024-12,Town,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,27,2.6
+Locale,2024-12,Town,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,37,2.8
+Locale,2024-12,Town,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,33,3.4
+Locale,2024-12,Town,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,2,1.1
+Locale,2024-12,Town,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Locale,2024-12,Town,AI3,Does your school have access to any AI-based tutoring systems?,Yes,11,2.1
+Locale,2024-12,Town,AI3,Does your school have access to any AI-based tutoring systems?,No,78,2.5
+Locale,2024-12,Town,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,10,2.3
+Locale,2024-12,Town,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Locale,2024-12,Town,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,36,3.3
+Locale,2024-12,Town,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,46,2.8
+Locale,2024-12,Town,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,18,2.5
+Locale,2024-12,Town,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Locale,2024-12,Town,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,9,2.3
+Locale,2024-12,Town,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,27,3.2
+Locale,2024-12,Town,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,48,3.6
+Locale,2024-12,Town,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,16,2.4
+Locale,2024-12,Town,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Locale,2024-12,Town,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,17,2.6
+Locale,2024-12,Town,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,27,3.5
+Locale,2024-12,Town,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,42,3.7
+Locale,2024-12,Town,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,14,2.1
+Locale,2024-12,Town,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Locale,2024-12,Town,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,13,2.2
+Locale,2024-12,Town,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,27,3.2
+Locale,2024-12,Town,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,44,3.9
+Locale,2024-12,Town,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,16,2.5
+Locale,2024-12,Town,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+Locale,2024-12,Town,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,5,1.7
+Locale,2024-12,Town,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,12,2.1
+Locale,2024-12,Town,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,44,3.8
+Locale,2024-12,Town,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,39,3.5
+Locale,2024-12,Town,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,‡,†
+Locale,2024-12,Town,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,50,3.5
+Locale,2024-12,Town,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,36,3.7
+Locale,2024-12,Town,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,14,2.1
+Locale,2024-12,Town,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Locale,2024-12,Town,DL1,Does your school offer training on digital literacy for your students?,Yes,69,3.4
+Locale,2024-12,Town,DL1,Does your school offer training on digital literacy for your students?,No,31,3.4
+Locale,2024-12,Town,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Locale,2024-12,Town,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†
+Locale,2024-12,Rural,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",All,27,1.9
+Locale,2024-12,Rural,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Only some,35,2.1
+Locale,2024-12,Rural,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",None,35,2.4
+Locale,2024-12,Rural,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Don't know,2,0.6
+Locale,2024-12,Rural,AI1a_1,"For this school year, were the following were provided training on the use of artificial intelligence (AI): Teachers",Missing,‡,†
+Locale,2024-12,Rural,AI3,Does your school have access to any AI-based tutoring systems?,Yes,11,1.5
+Locale,2024-12,Rural,AI3,Does your school have access to any AI-based tutoring systems?,No,77,2
+Locale,2024-12,Rural,AI3,Does your school have access to any AI-based tutoring systems?,Don't know,12,1.6
+Locale,2024-12,Rural,AI3,Does your school have access to any AI-based tutoring systems?,Missing,‡,†
+Locale,2024-12,Rural,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Yes,31,2.1
+Locale,2024-12,Rural,AI4a,Does your school or district have a written policy on students' use of AI in school)?,No,53,2.3
+Locale,2024-12,Rural,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Don't know,15,2.1
+Locale,2024-12,Rural,AI4a,Does your school or district have a written policy on students' use of AI in school)?,Missing,‡,†
+Locale,2024-12,Rural,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,All students,8,1.2
+Locale,2024-12,Rural,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Only some students,30,2.4
+Locale,2024-12,Rural,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,No students,49,2.8
+Locale,2024-12,Rural,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Don't know,13,1.8
+Locale,2024-12,Rural,AI5_1,Are the following topics regarding AI taught to students at your school: Technical knowledge around the use of AI,Missing,‡,†
+Locale,2024-12,Rural,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,All students,15,1.8
+Locale,2024-12,Rural,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Only some students,34,2.7
+Locale,2024-12,Rural,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,No students,40,2.6
+Locale,2024-12,Rural,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Don't know,11,1.6
+Locale,2024-12,Rural,AI5_2,Are the following topics regarding AI taught to students at your school: Ethical/appropriate uses of AI,Missing,‡,†
+Locale,2024-12,Rural,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,All students,12,1.5
+Locale,2024-12,Rural,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Only some students,29,2.5
+Locale,2024-12,Rural,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,No students,43,2.7
+Locale,2024-12,Rural,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Don't know,16,1.5
+Locale,2024-12,Rural,AI5_3,Are the following topics regarding AI taught to students at your school: Identifying misinformation that can be produced by AI,Missing,‡,†
+Locale,2024-12,Rural,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,All students,4,1.1
+Locale,2024-12,Rural,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Only some students,13,1.5
+Locale,2024-12,Rural,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,No students,47,2.8
+Locale,2024-12,Rural,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Don't know,35,2.6
+Locale,2024-12,Rural,AI5_4,Are the following topics regarding AI taught to students at your school: Other topics regarding AI,Missing,1,0.4
+Locale,2024-12,Rural,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Yes,51,2.6
+Locale,2024-12,Rural,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,No,37,2.5
+Locale,2024-12,Rural,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Don't know,12,1.6
+Locale,2024-12,Rural,AI5_y,Are any of the topics regarding AI listed taught to any students at your school?,Missing,‡,†
+Locale,2024-12,Rural,DL1,Does your school offer training on digital literacy for your students?,Yes,66,2.3
+Locale,2024-12,Rural,DL1,Does your school offer training on digital literacy for your students?,No,34,2.3
+Locale,2024-12,Rural,DL1,Does your school offer training on digital literacy for your students?,Don't know,‡,†
+Locale,2024-12,Rural,DL1,Does your school offer training on digital literacy for your students?,Missing,‡,†

@@ -1,0 +1,27 @@
+series,year,value,unit,source,verified
+US public school instructional rooms with internet,1994,3,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,1995,8,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,1996,14,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,1997,27,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,1998,51,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,1999,64,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,2000,77,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,2001,87,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,2002,92,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,2003,93,pct,NCES 2007-020 Fig 1,pdf
+US public school instructional rooms with internet,2005,94,pct,NCES 2007-020 Fig 1,pdf
+US public schools with any internet,1994,35,pct,NCES 2007-020 p.3,pdf
+US students per internet computer,1998,12.1,ratio,NCES 2007-020 p.6,pdf
+US students per internet computer,2005,3.8,ratio,NCES 2007-020 p.6,pdf
+US teachers well/very well prepared to use computers & internet,1999,33,pct (10 very well + 23 well),NCES 2000-102,pdf
+US high schools offering foundational CS,2018,45,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2019,47,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2020,51,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2021,53,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2022,57.7,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2023,60,pct,CodeAI state data xlsx,xlsx
+US high schools offering foundational CS,2024,60,pct,CodeAI state data xlsx,xlsx
+US HS students enrolled in foundational CS,2024,6.1,pct,CodeAI state data xlsx,xlsx
+US high schools teaching any AI topic,2024,72,pct (Dec 2024),NCES SPP AI5_y,xlsx
+US high schools teaching ethical AI use to all students,2024,25,pct (Dec 2024),NCES SPP AI5_2,xlsx
+US schools training all teachers on AI,2024,26,pct (Dec 2024),NCES SPP AI1a_1,xlsx

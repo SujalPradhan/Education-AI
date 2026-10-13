@@ -1,0 +1,10 @@
+year,states_with_k12_cs_standards,source,method
+2017,6,Code.org State of CS 2021 p.29 chart,read from chart
+2018,22,Code.org State of CS 2018 p.28,text
+2019,34,Code.org State of CS 2019,text
+2020,37,Code.org State of CS 2021 p.29 chart,read from chart
+2021,39,Code.org State of CS 2021 p.29 chart,read from chart
+2022,,Code.org State of CS 2022,not published as a single count
+2023,42,Code.org State of CS 2023 Appendix 1 table,counted (NC row split by PDF)
+2024,43,Code.org State of CS 2024,text
+2025,44,CodeAI State of AI+CS 2025 state pages,toggle colours counted (1 partial excluded)

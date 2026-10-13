@@ -1,0 +1,20 @@
+kind,case,from_label,from_year,to_label,to_year,lag_years,source_keys,confidence,note
+tech_to_curriculum,Pascal → AP CS,Pascal defined,1970,first AP exam,1984,14,wirth1971;wiki_apcs,medium,
+tech_to_curriculum,C++ → AP CS,C++ commercial release,1985,taught in AP CS,1998.7,13.7,stroustrup;astrachan1997,high,1998-99 school year
+tech_to_curriculum,Java → AP CS,Java public launch,1995,taught in AP CS,2003.7,8.7,java1995;slashdot2000,medium,2003-04 school year
+tech_to_curriculum,Python → Cyprus lower secondary,Python created (early 1990s),1991,replaces Pascal,2022.7,31.7,pythondocs;eurydice2022,medium,'early 1990s' per python.org; 0.9 released 1991
+tech_to_curriculum,Python → AP CS A,Python created,1991,not adopted (still Java in 2026),2026,,pythondocs;apcentral_csa,medium,open-ended
+tech_to_curriculum,ChatGPT → CS2023 (university),ChatGPT release,2022.9,CS2023 covers generative AI tools,2024.0,1.1,cs2023_bok,high,final report posted late 2023 to Apr 2024
+tech_to_curriculum,ChatGPT → CSTA 2026 (US K-12),ChatGPT release,2022.9,CSTA 2026 standards,2026.5,3.6,csta2026,high,
+tech_to_curriculum,ChatGPT → Czech AI curriculum,ChatGPT release,2022.9,full rollout,2032,9.1,eurydice2026,high,rollout 2028-32
+decision_to_classroom,AP CS → C++,decision,1994,first taught,1998.7,4.7,astrachan1997,high,
+decision_to_classroom,AP CS → Java,approval,2000.9,first taught,2003.7,2.8,slashdot2000,medium,
+decision_to_classroom,England computing,published,2013.7,first taught,2014.7,1,govuk_computing;eurydice2022,high,
+decision_to_classroom,England 2025 review,review report,2025.8,new curriculum,2028.7,2.9,car2025,medium,
+decision_to_classroom,Spain LOMLOE,law,2020.99,fully implemented,2024.0,3,eurydice2022,high,
+decision_to_classroom,Czechia informatics,framework adopted,2021,full lower-secondary,2024,3,eurydice2022,high,
+decision_to_classroom,Slovakia (incl. AI),approved,2023,full roll-out,2026.7,3.7,eurydice2026,high,
+decision_to_classroom,Malta ICT C3,first grade,2018.7,last grade,2022.7,4,eurydice2022,high,
+decision_to_classroom,Ireland coding course,first schools,2014,all phases,2021,7,eurydice2022,high,
+decision_to_classroom,Lithuania informatics,pilot,2021,mandatory,2023,2,eurydice2022,high,
+decision_to_classroom,CSTA 2026 standards,research begins,2023.75,released,2026.5,2.75,csta2026,high,then state adoption

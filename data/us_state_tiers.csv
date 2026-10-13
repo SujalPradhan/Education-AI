@@ -1,0 +1,51 @@
+state,ai_cs_standards,ai_cs_pd_funding,ai_cs_guidance,cs_grad_req,sea_ai_guidance,ai_law,tier,gop_margin_2024,enrollment_2023,per_pupil_spend_fy23
+Alabama,not_met,not_met,met,met,True,"HB329 (2026): CS course incl. AI required for graduation, class of 2032 [FutureEd; single-source]",1 AI in standards or law,30.47137199846364,745473,12765.83457750985
+Alaska,not_met,not_met,not_met,not_met,True,,2 Guidance only,13.138681814552733,130723,20339.725985480753
+Arizona,not_met,not_met,not_met,not_met,True,,2 Guidance only,5.528603238585687,898621,11297.091877443327
+Arkansas,not_met,met,not_met,met,False,,3 Neither,30.63696227876443,467862,12737.865011477745
+California,not_met,not_met,met,not_met,True,AB2876 (2024): IQC must *consider* AI literacy in math/science/HSS frameworks [chaptered],1 AI in standards or law,-20.134802141127196,5311431,18797.727392109588
+Colorado,met,not_met,met,not_met,True,,1 AI in standards or law,-10.984842196918326,846796,14857.550106519162
+Connecticut,not_met,not_met,not_met,not_met,True,,2 Guidance only,-14.504465580070608,472943,25081.227547505725
+Delaware,not_met,not_met,not_met,not_met,True,,2 Guidance only,-14.701713545961987,123243,21340.18159246367
+Florida,not_met,not_met,not_met,not_met,False,,3 Neither,13.100050377500791,2841354,11861.587116564848
+Georgia,not_met,not_met,not_met,not_met,True,,2 Guidance only,2.1920030928001935,1708936,14413.636321079315
+Hawaii,not_met,not_met,met,not_met,True,,2 Guidance only,-22.85997135394726,170209,20055.65510636923
+Idaho,not_met,not_met,not_met,not_met,False,SB1227 (2026): state GenAI framework incl. AI literacy standards [FutureEd + MultiState],1 AI in standards or law,35.99850021690177,289253,10290.703985784072
+Illinois,not_met,not_met,not_met,not_met,True,,2 Guidance only,-10.895619094280272,1842461,20252.954065242087
+Indiana,not_met,met,met,met,True,,2 Guidance only,18.95829878464673,983256,13120.985786000798
+Iowa,partial,not_met,partial,not_met,False,,3 Neither,13.209510515742053,511211,13791.500965354813
+Kansas,not_met,not_met,not_met,not_met,False,,3 Neither,16.115580777513557,487751,14847.108463129753
+Kentucky,partial,not_met,met,not_met,True,,2 Guidance only,30.534675324049303,659152,14632.668944340609
+Louisiana,not_met,met,not_met,met,True,,2 Guidance only,22.00500753621744,639586,14644.624804170197
+Maine,not_met,not_met,met,not_met,True,,2 Guidance only,-6.846128005678695,170728,18797.192024741107
+Maryland,not_met,not_met,not_met,not_met,False,SB720 (2026): AI literacy into state standards by Jun 2027; PD [FutureEd + ExcelinEd],1 AI in standards or law,-28.536263623419938,889557,18887.204529895218
+Massachusetts,not_met,not_met,met,not_met,True,,2 Guidance only,-24.914103042189854,871037,22947.270896643888
+Michigan,not_met,not_met,not_met,not_met,True,,2 Guidance only,1.4142014404188,1232814,17535.119653086356
+Minnesota,not_met,not_met,not_met,not_met,True,,2 Guidance only,-4.239409696612086,795812,16116.712238568909
+Mississippi,not_met,not_met,not_met,not_met,True,,2 Guidance only,22.888775968886197,436542,12093.097571367703
+Missouri,not_met,not_met,not_met,not_met,True,,2 Guidance only,18.40824056939359,865696,13471.724485269655
+Montana,not_met,not_met,met,not_met,True,,2 Guidance only,19.930410323684868,150028,13771.116058335778
+Nebraska,not_met,not_met,not_met,met,False,,3 Neither,20.460479194103648,328851,15200.285235562611
+Nevada,not_met,not_met,not_met,met,True,,2 Guidance only,3.0985156649874734,424337,11673.481218936835
+New Hampshire,not_met,not_met,not_met,not_met,False,,3 Neither,-2.7634281671124974,158759,21731.246732468713
+New Jersey,not_met,met,not_met,not_met,False,,3 Neither,-5.909530802941917,1317045,26279.647999878518
+New Mexico,not_met,not_met,not_met,not_met,True,,2 Guidance only,-6.000738572432621,294983,15693.206049162156
+New York,not_met,not_met,not_met,not_met,False,,3 Neither,-12.411916870023001,2355695,30011.704401461142
+North Carolina,not_met,not_met,met,met,True,,2 Guidance only,3.2118524528521055,1400794,12492.140171931062
+North Dakota,met,not_met,not_met,met,True,,1 AI in standards or law,36.44606212057421,118495,16114.139837123928
+Ohio,met,met,met,not_met,True,,1 AI in standards or law,11.207364070940194,1560559,16475.95701283963
+Oklahoma,not_met,not_met,met,not_met,True,,2 Guidance only,34.262753859247994,650345,11155.188400003075
+Oregon,partial,not_met,not_met,not_met,True,,2 Guidance only,-14.307017219478965,550594,17161.198632749358
+Pennsylvania,not_met,not_met,not_met,not_met,False,,3 Neither,1.7097309916712704,1510396,20055.719824469874
+Rhode Island,not_met,not_met,met,met,True,,2 Guidance only,-13.789111377040106,124230,21182.001126941963
+South Carolina,not_met,not_met,not_met,met,False,,3 Neither,17.86773882125786,736002,13957.36696367673
+South Dakota,partial,not_met,not_met,not_met,False,,3 Neither,29.194585495731157,141357,12005.454275345402
+Tennessee,partial,not_met,not_met,met,False,,3 Neither,29.719883731480557,1000982,12196.728812306315
+Texas,not_met,not_met,not_met,not_met,False,,3 Neither,13.683305009872088,5117013,12303.912653729823
+Utah,not_met,not_met,met,not_met,True,HB218 (2026): standards for an LEA-optional gr7/8 digital skills course incl. AI literacy [enrolled-text summaries],1 AI in standards or law,21.58235102056172,612821,10333.390990191263
+Vermont,not_met,not_met,not_met,not_met,True,,2 Guidance only,-31.21498585354734,83201,26344.599223567024
+Virginia,met,met,not_met,not_met,True,,1 AI in standards or law,-5.766475517444143,1260290,16098.03616627919
+Washington,not_met,not_met,not_met,not_met,True,,2 Guidance only,-18.218188832852604,1083584,18181.1571599433
+West Virginia,not_met,not_met,met,met,True,,2 Guidance only,41.863847130283354,249403,14575.161485627677
+Wisconsin,partial,not_met,met,not_met,True,,2 Guidance only,0.8588286368531176,811661,14881.816423359012
+Wyoming,not_met,not_met,met,not_met,True,,2 Guidance only,45.40595965668718,92380,19324.020350725266

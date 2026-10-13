@@ -1,0 +1,37 @@
+lane,region,level,event,year_start,year_end,label,source_key,confidence,note
+University CS (ACM/IEEE),US/global,University,edition,1968,,Curriculum 68,cs2023_intro,high,first ACM guidelines
+University CS (ACM/IEEE),US/global,University,edition,1979,,Curriculum 78,cs2023_intro,high,published CACM Mar 1979
+University CS (ACM/IEEE),US/global,University,edition,1991,,Computing Curricula 1991,cs2023_intro,high,first joint ACM/IEEE-CS
+University CS (ACM/IEEE),US/global,University,edition,2001,,CC2001,cs2023_intro,high,core 280 h
+University CS (ACM/IEEE),US/global,University,edition,2008,,CS2008 (interim),cs2023_intro,high,core 290 h
+University CS (ACM/IEEE),US/global,University,edition,2013,,CS2013,cs2023_intro,high,core 308 h (Tier1+Tier2)
+University CS (ACM/IEEE),US/global,University,edition,2023,,CS2023,cs2023_intro,high,CS core 270 h; first with AAAI
+US K-12 standards (ACM/CSTA),US,School,edition,2003,,ACM Model Curriculum,csta2026,high,
+US K-12 standards (ACM/CSTA),US,School,edition,2006,,ACM Model Curriculum rev.,csta2026,high,
+US K-12 standards (ACM/CSTA),US,School,edition,2011,,CSTA Standards,csta2026,high,
+US K-12 standards (ACM/CSTA),US,School,edition,2016,,K-12 CS Framework,csta2026,high,framework not standards
+US K-12 standards (ACM/CSTA),US,School,edition,2017,,CSTA Standards,csta2026,high,
+US K-12 standards (ACM/CSTA),US,School,window,2023,2026,CSTA 2026 (research fall 2023 to release Jul 2026),csta2026,high,AI distributed across concepts
+AP Computer Science (US),US,School,edition,1984,,First exam (Pascal),wiki_apcs,medium,secondary source
+AP Computer Science (US),US,School,window,1994,1999,Decided 1994; C++ taught from 1998-99,astrachan1997,high,
+AP Computer Science (US),US,School,window,2000,2004,Approved Nov 2000; Java from 2003-04,slashdot2000,medium,quotes College Board announcement
+AP Computer Science (US),US,School,edition,2009,,AB exam dropped,slashdot2008,medium,secondary
+AP Computer Science (US),US,School,edition,2017,,AP CS Principles first exam,edsurge2016,medium,course launched 2016-17
+AP Computer Science (US),US,School,edition,2026,,CSA revised (still Java),apcentral_csa,medium,page blocked to fetch; via secondary summaries
+England (UK; non-EU),Europe,School,window,2013,2014,Computing replaces ICT (published Sep 2013; taught 2014/15),govuk_computing,high,
+England (UK; non-EU),Europe,School,window,2025,2028,Review recommends broader computing GCSE; from 2028,car2025,medium,secondary summaries
+France,EU,School,edition,2015,,Informatics principles in primary & lower secondary,eurydice2022,high,
+France,EU,School,window,2018,2019,Lycée reform (informatics subjects),eurydice2022,high,
+Czechia,EU,School,window,2021,2024,New informatics: adopted 2021; full lower-sec 2024,eurydice2022,high,
+Czechia,EU,School,window,2028,2032,AI competences rollout 2028-32,eurydice2026,high,
+Slovakia,EU,School,window,2023,2027,New curriculum incl. AI standard: 2023 to full 2026/27,eurydice2026,high,
+Ireland,EU,School,window,2014,2021,Junior-cycle coding short course phased in,eurydice2022,high,
+Ireland,EU,School,edition,2018,,Leaving Certificate Computer Science,eurydice2022,high,
+Ireland,EU,School,edition,2026,,AI added to coding & digital media short courses,eurydice2026,high,
+Spain,EU,School,window,2020,2024,LOMLOE law Dec 2020; implemented 2022/23-2023/24,eurydice2022,high,
+Lithuania,EU,School,window,2021,2023,New informatics curriculum: pilot 2021; mandatory 2023,eurydice2022,high,
+Latvia,EU,School,window,2020,2023,New computing syllabus phased 2020/21-2022/23,eurydice2022,high,
+Malta,EU,School,window,2018,2023,ICT C3 phased 2018/19-2022/23,eurydice2022,high,
+Bulgaria,EU,School,window,2020,2021,Reform Aug 2020; new subject from 2021/22,eurydice2022,high,
+Cyprus,EU,School,edition,2022,,Pascal replaced by Python (planned 2022/23),eurydice2022,high,
+Luxembourg,EU,School,window,2021,2022,Digital sciences: pilot 2021/22; national 2022/23,eurydice2022,high,
